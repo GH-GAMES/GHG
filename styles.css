@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(0deg, #3CC325 0%, rgba(44, 108, 33, 0.95) 100%);
+    width: 1920px;
+    height: 1080px; 
+}
+.RC
+{
+    display: flex;
+    width: 533px;
+    height: 54px;
+    flex-direction: column;
+    flex-shrink: 0; 
+    color: #000;
+    font-size: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 100px;
+    margin-left: 100px;
+}.About
+{
+    display: flex;
+    width: 276px;
+    height: 54px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.logo{
+    background-image: url("image/logo.png");
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
