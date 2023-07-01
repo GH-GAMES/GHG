@@ -105,3 +105,37 @@ body {
     float: left;
     background-color: transparent;
  }
+ .GhText
+ {
+    display: flex;
+    width: 426px;
+    height: 72px;
+    flex-direction: column;
+    flex-shrink: 0; 
+    color: #000;
+    font-size: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    position: absolute;
+    top: 2032px; 
+    left: 74px;
+}
+.AboutText
+{
+    display: flex;
+    width: 874px;
+    height: 600px;
+    flex-direction: column;
+    flex-shrink: 0; 
+    color: #000;
+    font-size: 36px;
+    font-family: Island Moments;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    position: absolute;
+    top: 1180px; 
+    left: 875px;
+}
