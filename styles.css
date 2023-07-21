@@ -19,24 +19,25 @@ body {
     position: absolute;
     top: 15px; 
     left: 368px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .About
 {
     display: flex;
     width: 276px;
-    height: 54px;
+    height: 100px;
     flex-direction: column;
     flex-shrink: 0;
     color: #000;
     font-size: 64px;
     font-family: Inter;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 1000;
     line-height: normal;
     position: absolute;
     top: 15px; 
     left: 1362px;
-
+    font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .logo{
     background-image: url("image/logo.png");
@@ -46,6 +47,7 @@ body {
     position: absolute;
     top: 15px; 
     left: 100px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
 
   .logoAbout{
@@ -56,6 +58,7 @@ body {
     position: absolute;
     top: 1180px; 
     left: 101px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
   .discord
   {
@@ -66,6 +69,7 @@ body {
     position: absolute;
     top: 1845px; 
     left: 537px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
   .instagram
   {
@@ -76,6 +80,7 @@ body {
     position: absolute;
     top: 1845px; 
     left: 795px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
   .telegram
   {
@@ -86,6 +91,7 @@ body {
     position: absolute;
     top: 1845px; 
     left: 1046px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
   .vk
   {
@@ -96,6 +102,7 @@ body {
     position: absolute;
     top: 1845px; 
     left: 1297px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
   }
  .btn
  {
@@ -104,6 +111,7 @@ body {
     background: transparent;
     float: left;
     background-color: transparent;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
  }
  .GhText
  {
@@ -121,6 +129,7 @@ body {
     position: absolute;
     top: 2032px; 
     left: 74px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .AboutText
 {
@@ -138,6 +147,7 @@ body {
     position: absolute;
     top: 1180px; 
     left: 875px;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .header
 {
@@ -147,11 +157,13 @@ left: 0;
 width: 100%;
 z-index: 10;
 transition: all.2s ease;
+font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .header.fixed
 {
   position: fixed;
   transform: translateY(100px);
+  font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 .header__wrapper
 {
@@ -159,4 +171,9 @@ transition: all.2s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: Pompadur, 'Comic Sans MS', cursive;
 }
+@font-face {
+  font-family: Pompadur; /* Гарнитура шрифта */
+  src: url(fonts/RC_CM_Font.ttf); /* Путь к файлу со шрифтом */
+ }
