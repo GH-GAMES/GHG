@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pompadur';
+    src: url('fonts/RC_CM_Font.eot');
+    src: local('RC CM Font'), local('RC_CM_Font'),
+        url('./fonts/RC_CM_Font.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RC_CM_Font.woff2') format('woff2'), 
+        url('./fonts/RC_CM_Font.woff') format('woff'), 
+        url('./fonts/RC_CM_Font.ttf') format('truetype'); 
+}
