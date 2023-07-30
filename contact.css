@@ -4,8 +4,15 @@
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
+  overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
 a { 
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 } 
