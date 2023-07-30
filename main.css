@@ -5,6 +5,14 @@
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
   position: relative;
+  overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;
 }
 
 a { 
@@ -69,7 +77,7 @@ list-style-type: none; /* Убираем маркеры */
 .imgLogo{
   max-width: 114px;
   max-height: 114px;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 /*-----------Header-----------*/
@@ -111,6 +119,7 @@ list-style-type: none; /* Убираем маркеры */
 }
 .content-item-img img{
     width: 75%;
+    border-radius: 90px;
 }
 .content-para {
   color: #FFF; 
@@ -200,7 +209,7 @@ list-style-type: none; /* Убираем маркеры */
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 180px;;
+  margin-top: 180px;
 }
 .line,.line2,.line3,.line4,.line5{
   margin-left: auto;
@@ -247,7 +256,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-left: 20px;
   position: absolute;
   object-fit: cover; 
-  object-position: bottom; 
+  object-position: bottom;
 }
 .header-heading{
   color: #FFF;
@@ -265,7 +274,7 @@ list-style-type: none; /* Убираем маркеры */
   width: 548px;
   height: 548px;
   object-fit: cover; 
-  object-position: bottom; 
+  object-position: bottom;
  }
  .text{
   color: #FFF;
@@ -278,6 +287,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 200px;
   font-weight: 400;
   text-align: center;
+  opacity: 0;
  }
 
  .nav-list2{
@@ -449,7 +459,7 @@ transition: opacity 0.2s ease-out;
   position: absolute;
   max-width: 900px;
   max-height: 868px; 
-  bottom: -3%;
+  bottom: -2%;
   right: 0;
 }
 /* -----------Подвал-----------*/
@@ -458,3 +468,21 @@ img{
   height:100%;
   display: block;
 }
+.to-top {
+    bottom: -75px;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    position: fixed;
+    opacity: 0;
+    z-index: 9999;
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+    .to-top.active {
+        bottom: 25px;
+        opacity: 0.4;
+        pointer-events: auto;
+        z-index: 9999;
+    }
