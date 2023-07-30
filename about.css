@@ -150,12 +150,14 @@ list-style-type: none; /* Убираем маркеры */
 }
 
 .thumb-wrap {
+  padding-top: 20px;
   position: relative;
   padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
   height: 0;
   overflow: hidden;
 }
 .thumb-wrap iframe {
+  padding-top: 20px;
   position: absolute;
   top: 0;
   left: 0;
