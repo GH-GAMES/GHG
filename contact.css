@@ -72,11 +72,17 @@ list-style-type: none; /* Убираем маркеры */
   
 }
 
-.imgLogo{
-  max-width: 114px;
-  max-height: 114px;
+.img-logo{
+  display: block;
+  width: 114px;
+  height: 114px;
   margin-top: 12px;
   margin-left: 10px;
+}
+.img-logo img{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 /*-----------Header-----------*/
 
