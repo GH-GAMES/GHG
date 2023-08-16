@@ -29,6 +29,7 @@ a {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
+  width: 75%;
 }
 
 .header{
@@ -99,6 +100,7 @@ a {
   padding: 0 30px;
   position: relative;
   margin: 0 auto;
+  width: 75%;
 }
 
 .centr-text{

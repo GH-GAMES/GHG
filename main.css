@@ -35,6 +35,7 @@ list-style-type: none; /* Убираем маркеры */
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
+  width: 75%;
 }
 
 .header{
@@ -99,6 +100,7 @@ list-style-type: none; /* Убираем маркеры */
   padding: 0 30px;
   position: relative;
   margin: 0 auto;
+  width: 75%;
 }
 .content-row {
   max-width: 1980px;
@@ -112,7 +114,7 @@ list-style-type: none; /* Убираем маркеры */
 .content-item {
     width: 50%;
     min-width: 290px;    
-    margin-left: 20px;
+    margin-left: 40px;
   
 }
 .content-item-img{
