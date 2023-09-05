@@ -40,7 +40,7 @@ list-style-type: none; /* Убираем маркеры */
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
-  width: 75%;
+  width: 70%;
 }
 
 .header{
@@ -180,7 +180,7 @@ list-style-type: none; /* Убираем маркеры */
 }
 .line2{
   margin-top: 20px;
-  max-width: 1365px;
+  max-width: 1760px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -188,7 +188,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-right: 20px;
 }
 .line3{
-  max-width: 1365px;
+  max-width: 1760px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -198,7 +198,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-right: 20px;
 }
 .line4{
-  max-width: 1365px;
+  max-width: 1760px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -290,7 +290,7 @@ list-style-type: none; /* Убираем маркеры */
   line-height: normal; 
  }
  .news{
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 400;
   text-align: center;
   opacity: 0;
