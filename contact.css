@@ -5,6 +5,11 @@
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
   overflow-x: hidden;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;   
 }
 
 html {
@@ -193,8 +198,9 @@ list-style-type: none; /* Убираем маркеры */
     padding-right: 30px;
     color: #FFF;
     text-align: center;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 400;
+    font-family: Inter;
 
 }
 .TextContact2{
@@ -203,8 +209,9 @@ list-style-type: none; /* Убираем маркеры */
     padding-right: 30px;
     color: #FFF;
     text-align: center;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 400;
+    font-family: Inter;
 
 }
 
@@ -226,13 +233,13 @@ list-style-type: none; /* Убираем маркеры */
 }
 
 .line3{
-    margin-top: 33px;
-    max-width: 1793px;
-    border: none;
-    height: 10px;
-    background-color: #000;
-    padding-left: 20px;
-    padding-right: 20px;
+  margin-top: 20px;
+  max-width: 1793px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .line4{
@@ -326,7 +333,7 @@ list-style-type: none; /* Убираем маркеры */
  }
 
  .nav-list2{
-    padding-top: 1213px;
+  padding-top: 100px;
   display: flex;
   column-gap: 25px;
   font-weight: 400;

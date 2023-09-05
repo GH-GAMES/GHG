@@ -5,6 +5,11 @@
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
   overflow-x: hidden;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;   
 }
 
 html {
@@ -123,7 +128,7 @@ a {
 }
 
 .centr-text-Botton{
-    margin-top: 14px;
+    padding-top: 20px;
     color: #FFF; 
     text-align: center;
     font-size: 36px; 
@@ -131,7 +136,7 @@ a {
 }
 @media only screen and (max-width : 690px) {
     .centr-text-Botton2{
-    margin-top: 14px;
+    margin-top: 21px;
     color: #FFF; 
     text-align: center;
     font-size: 15px; 
@@ -158,7 +163,7 @@ a {
 }
 
 .line3{
-  margin-top: 21px;
+  margin-top: 20px;
   max-width: 1400px;
   border: none;
   height: 10px;
@@ -249,24 +254,17 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
- .centr-text-Botton{
-  margin-top: 14px;
-  color: #FFF; 
-  text-align: center;
-  font-size: 36px; 
-  font-weight: 400;
- }
- @media only screen and (max-width : 690px) {
-  .centr-text-Botton{
-    color: #FFF; 
-    text-align: center;
-    font-size: 15px; 
-    font-weight: 400;
-  }
+ .centr-text-Botton
+{
+margin-top: 2px;
+color: #FFF; 
+text-align: center;
+font-size: 36px; 
+font-weight: 400;
 }
 
 .centr-text-Botton2{
-  margin-top: 20px;
+  margin-top: 19px;
   color: #FFF; 
   text-align: center;
   font-size: 36px; 

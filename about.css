@@ -5,6 +5,11 @@
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
   overflow-x: hidden;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;   
 }
 
 html {
@@ -101,7 +106,7 @@ li {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
-  width: 75%;
+  width: 65%;
 }
 
 
@@ -138,14 +143,14 @@ li {
 }
 .line2{
   margin-top: 77px;
-  max-width: 1300px;
+  max-width: 1800px;
   border: none;
   height: 10px;
   background-color: #000;
   position: relative;
 }
 .line3{
-  margin-top: 23px;
+  margin-top: 15px;
   max-width: 1800px;
   border: none;
   height: 10px;
@@ -168,6 +173,7 @@ li {
   height: 10px;
   background-color: #000;
   position: relative;
+  text-align: left;
 }
 
 .line6{
@@ -208,7 +214,7 @@ li {
 }
 
 .centr-text2{
-  padding-top: 12px;
+  padding-top: 15px;
   color: #FFF;
   text-align: center;
   font-size: 48px;
@@ -229,8 +235,6 @@ li {
   line-height: normal; 
 }
 .textGH{
-  padding-left: 90px;
-  padding-right: 90px;
   color: #FFF;
   font-family: Inter;
   font-size: 40px;
@@ -241,7 +245,7 @@ li {
 .Developers{
   padding-top: 43px;
   color: #FFF;
-  text-align: center;
+  text-align: left;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
