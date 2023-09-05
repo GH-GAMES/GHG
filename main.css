@@ -61,6 +61,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 32px; 
   font-weight: 400; 
   white-space:nowrap;
+  margin-top: 10px;
 }
 /*Nav*/
 .nav-list{
@@ -70,7 +71,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 24px;
 }
 .nav-item{
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .nav-link{
@@ -85,7 +86,7 @@ list-style-type: none; /* Убираем маркеры */
   width: 114px;
   height: 114px;
   margin-top: 12px;
-  margin-left: 10px;
+  margin-left: 60px;
 }
 /*-----------Header-----------*/
 
@@ -180,7 +181,7 @@ list-style-type: none; /* Убираем маркеры */
 }
 .line2{
   margin-top: 20px;
-  max-width: 1760px;
+  max-width: 1360px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -188,7 +189,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-right: 20px;
 }
 .line3{
-  max-width: 1760px;
+  max-width: 1360px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -198,7 +199,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-right: 20px;
 }
 .line4{
-  max-width: 1760px;
+  max-width: 1360px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -208,7 +209,7 @@ list-style-type: none; /* Убираем маркеры */
   padding-right: 20px;
 }
 .line5{
-  max-width: 1793px;
+  max-width: 1360px;
   border: none;
   height: 10px;
   background-color: #000;

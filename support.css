@@ -55,6 +55,7 @@ a {
   font-size: 32px; 
   font-weight: 400; 
   white-space:nowrap;
+  margin-top: 10px;
 }
 /*Nav*/
 .nav-list{
@@ -62,9 +63,10 @@ a {
   column-gap: 50px;
   font-weight: 400;
   font-size: 24px;
+
 }
 .nav-item{
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .nav-link{
@@ -75,7 +77,6 @@ a {
 }
 
 .img-logo{
-
   display: block;
   width: 114px;
   height: 114px;

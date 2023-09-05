@@ -59,6 +59,7 @@ li {
   font-size: 32px; 
   font-weight: 400; 
   white-space:nowrap;
+  margin-top: 10px;
 }
 /*Nav*/
 .nav-list{
@@ -68,7 +69,7 @@ li {
   font-size: 24px;
 }
 .nav-item{
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .nav-link{
@@ -82,7 +83,7 @@ li {
   width: 114px;
   height: 114px;
   margin-top: 12px;
-  margin-left: 10px;
+  margin-left: -45px;
 }
 .img-logo img{
   width: 100%;
@@ -171,9 +172,8 @@ li {
   max-width: 420px;
   border: none;
   height: 10px;
-  background-color: #000;
+  background-color: #000000;
   position: relative;
-  text-align: left;
 }
 
 .line6{
@@ -194,6 +194,54 @@ li {
   background-color: #000;
   position: relative;
 }
+
+.line8{
+  margin-top: 5px;
+  margin-bottom: 33px;
+  max-width: 220px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  position: relative;
+}
+.line9{
+  margin-top: 5px;
+  margin-bottom: 33px;
+  max-width: 410px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  position: relative;
+}
+.line10{
+  margin-top: 5px;
+  margin-bottom: 33px;
+  max-width: 685px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  position: relative;
+}
+.line11{
+  margin-top: 5px;
+  margin-bottom: 33px;
+  max-width: 310px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  position: relative;
+}
+.line12{
+  margin-top: 5px;
+  margin-bottom: 33px;
+  max-width: 155px;
+  border: none;
+  height: 10px;
+  background-color: #000;
+  position: relative;
+}
+
+
 
 .thumb-wrap {
   margin-left: auto;
@@ -330,7 +378,7 @@ line-height: normal;
 
 
 
-.line,.line2,.line3,.line4,.line5{
+.line,.line2,.line3,.line4{
 margin-left: auto;
 margin-right: auto;
 }

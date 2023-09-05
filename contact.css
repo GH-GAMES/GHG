@@ -59,6 +59,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 32px; 
   font-weight: 400; 
   white-space:nowrap;
+  margin-top: 10px;
 }
 /*Nav*/
 .nav-list{
@@ -68,7 +69,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 24px;
 }
 .nav-item{
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .nav-link{
@@ -83,7 +84,7 @@ list-style-type: none; /* Убираем маркеры */
   width: 114px;
   height: 114px;
   margin-top: 12px;
-  margin-left: 10px;
+  margin-left: 60px;
 }
 .img-logo img{
   width: 100%;
