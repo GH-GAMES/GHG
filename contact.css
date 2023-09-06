@@ -56,10 +56,10 @@ list-style-type: none; /* Убираем маркеры */
 
 .logo{
   color: #ffffff; 
-  font-size: 32px; 
+  font-size: 24px; 
   font-weight: 400; 
   white-space:nowrap;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 /*Nav*/
 .nav-list{

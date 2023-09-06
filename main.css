@@ -42,7 +42,12 @@ list-style-type: none; /* Убираем маркеры */
   margin: 0 auto;
   width: 70%;
 }
-
+.cont{
+  max-width: 1980px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 70%;
+}
 .header{
   padding-left: 0px;
   height: 52px;
@@ -58,10 +63,10 @@ list-style-type: none; /* Убираем маркеры */
 
 .logo{
   color: #ffffff; 
-  font-size: 32px; 
+  font-size: 24px; 
   font-weight: 400; 
   white-space:nowrap;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 /*Nav*/
 .nav-list{
