@@ -61,6 +61,17 @@ li {
   white-space:nowrap;
   margin-top: 14px;
 }
+@media only screen and (max-width : 500px) {
+  .logo{
+    color: #ffffff; 
+    font-size: 12px; 
+    font-weight: 400; 
+    white-space:nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+}
+
 /*Nav*/
 .nav-list{
   display: flex;
@@ -68,8 +79,21 @@ li {
   font-weight: 400;
   font-size: 24px;
 }
+@media only screen and (max-width : 500px) {
+  .nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
 .nav-item{
   margin-top: 14px;
+}
+@media only screen and (max-width : 500px) {
+  .nav-item{
+    margin-top: 21px;
+  }
 }
 
 .nav-link{
@@ -89,6 +113,15 @@ li {
   width: 100%;
   height: 100%;
   display: block;
+}
+@media only screen and (max-width : 500px) {
+  .img-logo{
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin-top: 12px;
+    margin-left: -45px;
+  }
 }
 /*-----------Header-----------*/
 
@@ -120,20 +153,19 @@ li {
   font-weight: 400;
   line-height: normal; 
 }
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 500px) {
   .centr-text{
-    margin-top: -40px;
     color: #FFF;
     text-align: center;
     font-family: Bebas Neue;
-    font-size: 150px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
   }
 }
 
-
+/*-----------Line-----------*/
 .line{
   margin-bottom: 74px;
   max-width: 700px;
@@ -142,6 +174,16 @@ li {
   background-color: #000;
   position: relative;
 }
+@media only screen and (max-width : 500px) {
+  .line{
+    margin-bottom: 20px;
+    max-width: 700px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
+}
 .line2{
   margin-top: 77px;
   max-width: 1800px;
@@ -149,6 +191,16 @@ li {
   height: 10px;
   background-color: #000;
   position: relative;
+}
+@media only screen and (max-width : 500px) {
+  .line2{
+    margin-top: 20px;
+    max-width: 1800px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
 }
 .line3{
   margin-top: 15px;
@@ -240,7 +292,16 @@ li {
   background-color: #000;
   position: relative;
 }
-
+.line,.line2,.line3,.line4{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width : 500px) {
+  .line,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,.line5,.line10,.line11,.line12{
+    height: 5px;
+  }
+}
+/*-----------Line-----------*/
 
 
 .thumb-wrap {
@@ -270,6 +331,17 @@ li {
   font-weight: 400;
   line-height: normal; 
 }
+@media only screen and (max-width : 500px) {
+  .centr-text2{
+    padding-top: 15px;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+  }
+}
 
 .centr-text3{
   padding-top: 30px;
@@ -282,6 +354,20 @@ li {
   font-weight: 400;
   line-height: normal; 
 }
+@media only screen and (max-width : 500px) {
+  .centr-text3{
+    padding-top: 30px;
+    padding-bottom: 32px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+  }
+}
+
 .textGH{
   color: #FFF;
   font-family: Inter;
@@ -289,6 +375,16 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal; 
+}
+@media only screen and (max-width : 500px) {
+  .textGH{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+  }
 }
 .Developers{
   padding-top: 43px;
@@ -298,6 +394,17 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal; 
+}
+@media only screen and (max-width : 500px) {
+  .Developers{
+    padding-top: 60px;
+    color: #FFF;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+  }
 }
 
 
@@ -316,6 +423,12 @@ li {
   max-width: 400px;
   max-height: 400px;
 }
+@media only screen and (max-width : 500px) {
+  .imgMember{
+    max-width: 10px;
+    max-height: 10px;
+  }
+}
 
 .content-row {
   max-width: 1800px;
@@ -333,6 +446,14 @@ li {
   border-radius: 50px;
   margin-right: 50px;
 }
+@media only screen and (max-width : 500px) {
+  .content-item-img img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 25px;
+    margin-right: 25px;
+  }
+}
 .content-para {
   color: #FFF; 
   margin-top: 8px;
@@ -340,6 +461,16 @@ li {
   line-height: normal; 
   text-align: justify;
   font-size: 64px; 
+}
+@media only screen and (max-width : 500px) {
+  .content-para{
+    color: #FFF; 
+    margin-top: 8px;
+    font-weight: 400; 
+    line-height: normal; 
+    text-align: justify;
+    font-size: 32px; 
+  }
 }
 .content-para2 {
   color: #FFF; 
@@ -349,15 +480,35 @@ li {
   text-align: justify;
   font-size: 40px; 
 }
+@media only screen and (max-width : 500px) {
+  .content-para2{
+    color: #FFF; 
+    margin-top: 8px;
+    font-weight: 400; 
+    line-height: normal; 
+    text-align: justify;
+    font-size: 10px; 
+  }
+}
 .nav-item3{
-  color: #FFF;
+color: #FFF;
 font-family: Inter;
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
 line-height: normal; 
 }
-
+@media only screen and (max-width : 500px) {
+  .nav-item3{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+text-align: center;
+  }
+}
 
 /*------------------*/
 
@@ -378,10 +529,7 @@ line-height: normal;
 
 
 
-.line,.line2,.line3,.line4{
-margin-left: auto;
-margin-right: auto;
-}
+
 
 /*------------------*/
 
@@ -392,7 +540,22 @@ margin-right: auto;
   font-weight: 400;
   font-size: 24px;
 }
-
+@media only screen and (max-width : 500px) {
+  .nav-list2{
+    padding-top: 100px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: -35px;
+  }
+}
+@media only screen and (max-width : 500px) {
+  .h123{
+    height: 30px;
+    width: 30px;
+  }
+}
 
 
 /* -----------Подвал-----------*/
@@ -407,6 +570,13 @@ margin-right: auto;
   color: white;
   font-size: 24px;
   font-weight: 400;
+}
+@media only screen and (max-width : 500px) {
+  .footer__text{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 .to-top {

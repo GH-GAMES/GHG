@@ -126,6 +126,7 @@ list-style-type: none; /* Убираем маркеры */
   width: 80%;
   min-width: 290px;
 }
+
 .content-item-img{
   padding-left: 20px;
 }
@@ -133,6 +134,13 @@ list-style-type: none; /* Убираем маркеры */
   width: 85%;
   border-radius: 90px;
 }
+@media only screen and (max-width : 500px) {
+  .content-item-img img{
+    width: 42%;
+    border-radius: 90px;
+  }
+}
+
 .content-para {
   color: #FFF; 
   margin-top: 8px;
@@ -143,6 +151,20 @@ list-style-type: none; /* Убираем маркеры */
   font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
   margin-right: 20px;
   margin-left: -80px;
+}
+
+@media only screen and (max-width : 500px) {
+  .content-para{
+    color: #FFF; 
+    margin-top: 8px;
+    font-weight: 400; 
+    line-height: normal; 
+    text-align: justify;
+    font-size: px; 
+    font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
+    margin-right: 20px;
+    margin-left: -80px;
+  }
 }
 @media(max-width:769px){
     .content-row{
@@ -166,16 +188,34 @@ list-style-type: none; /* Убираем маркеры */
   flex-shrink: 0; 
   font-weight: 400;
 }
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 1330px) {
   .centr-text{
-    margin-top: -40px;
     color: #FF8500;
     text-align: center;
-    font-size: 40px;
+    font-size: 90px;
     flex-shrink: 0; 
     font-weight: 400;
   }
 }
+@media only screen and (max-width : 500px) {
+  .centr-text{
+    color: #FF8500;
+    text-align: center;
+    font-size: 30px;
+    flex-shrink: 0; 
+    font-weight: 400;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 .line{
   margin-top: 20px;
@@ -234,7 +274,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 36px; 
   font-weight: 400;
  }
- @media only screen and (max-width : 690px) {
+ @media only screen and (max-width : 1200px) {
   .centr-text-Botton{
     color: #FFF; 
     text-align: center;
@@ -355,9 +395,9 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
-  background: url('prev.pngа') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('prev.pnga') no-repeat; /*заливка фона картинкой без повторений*/
   float: left;
-  margin: 0 0 0 0; /*сдвиг влево*/
+  margin: -440px 0 0 -130px; /*сдвиг влево*/
   display: block;
   height: 68px;
   width: 68px;
@@ -369,9 +409,9 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1){
-  background: url('next.pngа') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('next.pnga') no-repeat; /*заливка фона картинкой без повторений*/
   float: right;
-  margin: 0 0 0 0;/*сдвиг вправо*/
+  margin: -430px -84px 0 0;/*сдвиг вправо*/
   display: block;
   height: 68px;
   width: 68px;
@@ -489,20 +529,20 @@ img{
   display: block;
 }
 .to-top {
-    bottom: -75px;
-    width: 50px;
-    height: 50px;
-    right: 25px;
-    position: fixed;
-    opacity: 0;
-    z-index: 9999;
-    transition: all 0.5s;
-    pointer-events: none;
+  bottom: -75px;
+  width: 50px;
+  height: 50px;
+  right: 25px;
+  position: fixed;
+  opacity: 0;
+  z-index: 9999;
+  transition: all 0.5s;
+  pointer-events: none;
 }
 
-    .to-top.active {
-        bottom: 25px;
-        opacity: 0.4;
-        pointer-events: auto;
-        z-index: 9999;
-    }
+.to-top.active {
+  bottom: 25px;
+  opacity: 0.4;
+  pointer-events: auto;
+  z-index: 9999;
+}
