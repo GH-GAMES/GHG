@@ -65,6 +65,7 @@ a {
     white-space:nowrap;
     margin-top: 21px;
     margin-right: 20px;
+    margin-left: -20px;
   }
 }
 /*Nav*/
@@ -77,7 +78,7 @@ a {
 @media only screen and (max-width : 500px) {
   .nav-list{
     display: flex;
-    column-gap: 50px;
+    column-gap: 25px;
     font-weight: 400;
     font-size: 12px;
   }
@@ -117,7 +118,7 @@ a {
     width: 57px;
     height: 57px;
     margin-top: 32px;
-    margin-left: -1px;
+    margin-left: -20px;
   }
 }
 /*-----------Header-----------*/
@@ -192,6 +193,7 @@ a {
   height: 10px;
   background-color: #000;
 }
+
 .line2{
   margin-top: 117px;
   max-width: 1400px;
@@ -201,7 +203,17 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+@media only screen and (max-width : 500px) {
+  .line2{
+    margin-top: 58px;
+    max-width: 1400px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .line3{
   margin-top: 20px;
   max-width: 1400px;
@@ -220,7 +232,17 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+@media only screen and (max-width : 500px) {
+  .line4{
+    margin-top: 30px;
+    max-width: 1400px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .line5{
   margin-top: 25px;
   max-width: 1400px;
@@ -249,6 +271,18 @@ a {
   max-width: 1400px;
   display: block; /* Блочный элемент (для старых браузеров) */
   text-align: center; /* Выравнивание по центру */
+}
+@media only screen and (max-width : 500px) {
+  .ImgDiscord{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 100%;
+    max-height: 787px;
+    max-width: 1400px;
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+  }
 }
 .oval{
   margin-left: auto;
@@ -309,8 +343,8 @@ a {
 
 @media only screen and (max-width : 500px) {
   .tmp{
-    width: 35%;
-    height: 35%;
+    width: 100%;
+    height: 100%;
   }
 }
 .img__price{
@@ -322,7 +356,8 @@ a {
     .img__price{
       position: absolute;
       right: 0;
-      bottom: 25%;
+      bottom: 45%;
+      width: 25%;
       }
   }
 
@@ -337,7 +372,21 @@ a {
   .img__price2{
     position: absolute;
     right: 0;
-    bottom: 30%;
+    bottom: 45%;
+    width: 25%;
+    }
+}
+.img__price3{
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+}
+@media only screen and (max-width : 500px) {
+  .img__price3{
+    position: absolute;
+    right: 0;
+    bottom: 38%;
+    width: 25%;
     }
 }
 

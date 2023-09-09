@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
-  position: relative;
   overflow-x: hidden;
   -webkit-user-select: none; 
   -webkit-touch-callout: none; 
@@ -19,14 +18,9 @@ html {
 ::-webkit-scrollbar {
     width: 0;
 }
-
 a { 
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 } 
-
-li {
-list-style-type: none; /* Убираем маркеры */
-}
 
 *{
   font-family: 'Pompadur';
@@ -42,12 +36,7 @@ list-style-type: none; /* Убираем маркеры */
   margin: 0 auto;
   width: 70%;
 }
-.cont{
-  max-width: 1980px;
-  padding: 0 30px;
-  margin: 0 auto;
-  width: 70%;
-}
+
 .header{
   padding-left: 0px;
   height: 52px;
@@ -76,6 +65,7 @@ list-style-type: none; /* Убираем маркеры */
     white-space:nowrap;
     margin-top: 21px;
     margin-right: 20px;
+    margin-left: -20px;
   }
 }
 /*Nav*/
@@ -88,11 +78,12 @@ list-style-type: none; /* Убираем маркеры */
 @media only screen and (max-width : 500px) {
   .nav-list{
     display: flex;
-    column-gap: 50px;
+    column-gap: 25px;
     font-weight: 400;
     font-size: 12px;
   }
 }
+
 .nav-item{
   margin-top: 14px;
 }
@@ -113,8 +104,13 @@ list-style-type: none; /* Убираем маркеры */
   display: block;
   width: 114px;
   height: 114px;
-  margin-top: 12px;
-  margin-left: 60px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.img-logo img{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 @media only screen and (max-width : 500px) {
   .img-logo{
@@ -122,7 +118,7 @@ list-style-type: none; /* Убираем маркеры */
     width: 57px;
     height: 57px;
     margin-top: 32px;
-    margin-left: -1px;
+    margin-left: -20px;
   }
 }
 /*-----------Header-----------*/
@@ -147,9 +143,9 @@ list-style-type: none; /* Убираем маркеры */
 }
 @media only screen and (max-width : 500px) {
   .mainContainer{
-    max-width: 1400px;
+    max-width: 1980px;
     padding: 0 10px;
-    position: relative;
+   text-align: center;
     margin: 0 auto;
     width: 90%;
   }
@@ -457,7 +453,7 @@ article img{ /*размер изображений слайдера*/
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch1:checked ~ #controls label:nth-child(5), 
-#switch2:checked ~ #controls label:nth-child(1),
+
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
@@ -602,7 +598,7 @@ transition: opacity 0.2s ease-out;
   .img__footer{
   position: absolute;
   width: 30%;
-  bottom: 3%;
+  bottom: -101%;
   right: 0;
   }
 }

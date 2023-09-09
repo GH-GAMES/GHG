@@ -22,10 +22,6 @@ a {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 } 
 
-li {
-list-style-type: none; /* Убираем маркеры */
-}
-
 *{
   font-family: 'Pompadur';
   padding: 0;
@@ -69,9 +65,9 @@ list-style-type: none; /* Убираем маркеры */
     white-space:nowrap;
     margin-top: 21px;
     margin-right: 20px;
+    margin-left: -20px;
   }
 }
-
 /*Nav*/
 .nav-list{
   display: flex;
@@ -82,7 +78,7 @@ list-style-type: none; /* Убираем маркеры */
 @media only screen and (max-width : 500px) {
   .nav-list{
     display: flex;
-    column-gap: 50px;
+    column-gap: 25px;
     font-weight: 400;
     font-size: 12px;
   }
@@ -121,8 +117,8 @@ list-style-type: none; /* Убираем маркеры */
     display: block;
     width: 57px;
     height: 57px;
-    margin-top: 32px;
-    margin-left: -1px;
+    margin-top: 12px;
+    margin-left: 20px;
   }
 }
 /*-----------Header-----------*/

@@ -13,18 +13,14 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 a { 
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 } 
-
-li {
-  list-style-type: none; /* Убираем маркеры */
-}
 
 *{
   font-family: 'Pompadur';
@@ -69,9 +65,9 @@ li {
     white-space:nowrap;
     margin-top: 21px;
     margin-right: 20px;
+    margin-left: -20px;
   }
 }
-
 /*Nav*/
 .nav-list{
   display: flex;
@@ -82,11 +78,12 @@ li {
 @media only screen and (max-width : 500px) {
   .nav-list{
     display: flex;
-    column-gap: 50px;
+    column-gap: 25px;
     font-weight: 400;
     font-size: 12px;
   }
 }
+
 .nav-item{
   margin-top: 14px;
 }
@@ -99,15 +96,16 @@ li {
 .nav-link{
   color: #ffffff;
   font-weight: 400;
-  white-space:nowrap; 
+  white-space:nowrap;
+  
 }
 
 .img-logo{
   display: block;
   width: 114px;
   height: 114px;
-  margin-top: 12px;
-  margin-left: -45px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 .img-logo img{
   width: 100%;
@@ -120,7 +118,7 @@ li {
     width: 57px;
     height: 57px;
     margin-top: 12px;
-    margin-left: -45px;
+    margin-left: 20px;
   }
 }
 /*-----------Header-----------*/
@@ -235,7 +233,17 @@ li {
   background-color: #000000;
   position: relative;
 }
-
+@media only screen and (max-width : 500px) {
+  .line5{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 210px;
+    border: none;
+    height: 10px;
+    background-color: #000000;
+    position: relative;
+  }
+}
 .line6{
   margin-top: 5px;
   margin-bottom: 33px;
@@ -245,6 +253,17 @@ li {
   background-color: #000;
   position: relative;
 }
+@media only screen and (max-width : 500px) {
+  .line6{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 175px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
+}
 .line7{
   margin-top: 5px;
   margin-bottom: 33px;
@@ -253,6 +272,17 @@ li {
   height: 10px;
   background-color: #000;
   position: relative;
+}
+@media only screen and (max-width : 500px) {
+  .line7{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 210px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
 }
 
 .line8{
@@ -264,6 +294,18 @@ li {
   background-color: #000;
   position: relative;
 }
+@media only screen and (max-width : 500px) {
+  .line8{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 110px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
+}
+
 .line9{
   margin-top: 5px;
   margin-bottom: 33px;
@@ -272,6 +314,17 @@ li {
   height: 10px;
   background-color: #000;
   position: relative;
+}
+@media only screen and (max-width : 500px) {
+  .line9{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 205px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
 }
 .line10{
   margin-top: 5px;
@@ -282,6 +335,17 @@ li {
   background-color: #000;
   position: relative;
 }
+@media only screen and (max-width : 500px) {
+  .line10{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 175px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
+}
 .line11{
   margin-top: 5px;
   margin-bottom: 33px;
@@ -291,6 +355,17 @@ li {
   background-color: #000;
   position: relative;
 }
+@media only screen and (max-width : 500px) {
+  .line11{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 155px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
+}
 .line12{
   margin-top: 5px;
   margin-bottom: 33px;
@@ -299,6 +374,17 @@ li {
   height: 10px;
   background-color: #000;
   position: relative;
+}
+@media only screen and (max-width : 500px) {
+  .line12{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 45px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+  }
 }
 .line,.line2,.line3,.line4{
   margin-left: auto;
@@ -456,8 +542,8 @@ li {
 }
 @media only screen and (max-width : 500px) {
   .content-item-img img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 120px;
+    max-height: 120px;
     border-radius: 25px;
     margin-right: 25px;
   }
