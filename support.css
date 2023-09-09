@@ -57,16 +57,39 @@ a {
   white-space:nowrap;
   margin-top: 14px;
 }
+@media only screen and (max-width : 500px) {
+  .logo{
+    color: #ffffff; 
+    font-size: 12px; 
+    font-weight: 400; 
+    white-space:nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+}
 /*Nav*/
 .nav-list{
   display: flex;
   column-gap: 50px;
   font-weight: 400;
   font-size: 24px;
-
 }
+@media only screen and (max-width : 500px) {
+  .nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
 .nav-item{
   margin-top: 14px;
+}
+@media only screen and (max-width : 500px) {
+  .nav-item{
+    margin-top: 21px;
+  }
 }
 
 .nav-link{
@@ -87,6 +110,15 @@ a {
   width: 100%;
   height: 100%;
   display: block;
+}
+@media only screen and (max-width : 500px) {
+  .img-logo{
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin-top: 32px;
+    margin-left: -1px;
+  }
 }
 /*-----------Header-----------*/
 
@@ -119,33 +151,31 @@ a {
 }
 @media only screen and (max-width : 690px) {
   .centr-text{
-    margin-top: -40px;
     color: #FF8500;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     flex-shrink: 0; 
     font-weight: 400;
   }
 }
 
 .centr-text-Botton{
-    padding-top: 20px;
-    color: #FFF; 
-    text-align: center;
-    font-size: 36px; 
-    font-weight: 400;
+  padding-top: 20px;
+  color: #FFF; 
+  text-align: center;
+  font-size: 36px; 
+  font-weight: 400;
 }
 @media only screen and (max-width : 690px) {
-    .centr-text-Botton2{
-    margin-top: 21px;
-    color: #FFF; 
-    text-align: center;
-    font-size: 15px; 
-    font-weight: 400;
-    }
+  .centr-text-Botton{
+  color: #FFF; 
+  text-align: center;
+  font-size: 18px; 
+  font-weight: 400;
+  }
 }
 
-
+/*--------Line----------*/
 .line{
   margin-top: 20px;
   max-width: 741px;
@@ -191,6 +221,16 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
+.line,.line2,.line3,.line4,line5{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width : 500px) {
+  .line,.line2,.line3,.line4,.line5{
+    height: 5px;
+  }
+}
+/*--------Line----------*/
 .ImgDiscord{
   margin-left: auto;
   margin-right: auto;
@@ -212,6 +252,19 @@ a {
   border-radius: 50px;
   background: #5F5F5F; 
 }
+@media only screen and (max-width : 500px) {
+  .oval{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    padding-bottom: 20px;
+    max-width: 700px;
+    max-height: 76px;
+    flex-shrink: 0; 
+    border-radius: 25px;
+    background: #5F5F5F; 
+  }
+}
 .DisText{
   margin-left: auto;
   margin-right: auto;
@@ -222,6 +275,18 @@ a {
   font-size: 36px;
   font-weight: 400;
 }
+@media only screen and (max-width : 500px) {
+  .DisText{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Voces; 
+    padding-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 .price__block{
   margin-left: auto;
   margin-right: auto;
@@ -231,17 +296,39 @@ a {
   padding-left: 30px;
   padding-top: 27px;
 }
-.img__price2{
-  position: absolute;
-  right: 0;
-  bottom: -30%;
+
+@media only screen and (max-width : 500px) {
+  .tmp{
+    width: 35%;
+    height: 35%;
   }
-  
-  .img__price{
+}
+.img__price{
   position: absolute;
   right: 0;
   bottom: -65%;
   }
+  @media only screen and (max-width : 500px) {
+    .img__price{
+      position: absolute;
+      right: 0;
+      bottom: 25%;
+      }
+  }
+.img__price2{
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+}
+@media only screen and (max-width : 500px) {
+  .img__price2{
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    }
+}
+
+
 .nav-item3{
   color: #FFF;
   font-family: Voces;
@@ -250,36 +337,16 @@ a {
   font-weight: 400;
   line-height: normal; 
 }
-
-.line,.line2,.line3,.line4,.line5{
-  margin-left: auto;
-  margin-right: auto;
-}
- .centr-text-Botton
-{
-margin-top: 2px;
-color: #FFF; 
-text-align: center;
-font-size: 36px; 
-font-weight: 400;
-}
-
-.centr-text-Botton2{
-  margin-top: 19px;
-  color: #FFF; 
-  text-align: center;
-  font-size: 36px; 
-  font-weight: 400;
-   }
-   @media only screen and (max-width : 690px) {
-    .centr-text-Botton2{
-      margin-top: 20px;
-      color: #FFF; 
-      text-align: center;
-      font-size: 15px; 
-      font-weight: 400;
-    }
+@media only screen and (max-width : 500px) {
+  .nav-item3{
+    color: #FFF;
+    font-family: Voces;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
   }
+}
 
 /*------------------*/
 
@@ -292,7 +359,22 @@ font-weight: 400;
   font-weight: 400;
   font-size: 24px;
 }
-
+@media only screen and (max-width : 500px) {
+  .nav-list2{
+    padding-top: 100px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: -35px;
+  }
+}
+@media only screen and (max-width : 500px) {
+  .h123{
+    height: 30px;
+    width: 30px;
+  }
+}
 
 
 /* -----------Подвал-----------*/
@@ -308,6 +390,13 @@ font-weight: 400;
   color: white;
   font-size: 24px;
   font-weight: 400;
+}
+@media only screen and (max-width : 500px) {
+  .footer__text{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 .to-top {
