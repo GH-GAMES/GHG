@@ -144,6 +144,15 @@ list-style-type: none; /* Убираем маркеры */
   margin: 0 auto;
   width: 75%;
 }
+@media only screen and (max-width : 500px) {
+  .mainContainer{
+    max-width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .content-row {
     max-width: 1980px;
     display: flex;
@@ -228,8 +237,6 @@ list-style-type: none; /* Убираем маркеры */
 
 .TextContact{
   padding-top: 26px;
-  padding-left: 30px;
-  padding-right: 30px;
   color: #FFF;
   text-align: center;
   font-size: 40px;
@@ -239,8 +246,6 @@ list-style-type: none; /* Убираем маркеры */
 @media only screen and (max-width : 500px) {
   .TextContact{
     padding-top: 26px;
-    padding-left: 30px;
-    padding-right: 30px;
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -250,8 +255,6 @@ list-style-type: none; /* Убираем маркеры */
 }
 .TextContact2{
     padding-top: 44px;
-    padding-left: 30px;
-    padding-right: 30px;
     color: #FFF;
     text-align: center;
     font-size: 40px;
@@ -262,8 +265,6 @@ list-style-type: none; /* Убираем маркеры */
 @media only screen and (max-width : 500px) {
   .TextContact2{
     padding-top: 26px;
-    padding-left: 30px;
-    padding-right: 30px;
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -420,7 +421,6 @@ list-style-type: none; /* Убираем маркеры */
     column-gap: 10px;
     font-weight: 400;
     font-size: 12px;
-    margin-left: -35px;
   }
 }
 @media only screen and (max-width : 500px) {

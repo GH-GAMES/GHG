@@ -140,6 +140,15 @@ a {
   margin: 0 auto;
   width: 70%;
 }
+@media only screen and (max-width : 500px) {
+  .mainContainer{
+    max-width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 
 .centr-text{
   padding-top: 100px;
@@ -149,7 +158,7 @@ a {
   flex-shrink: 0; 
   font-weight: 400;
 }
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 500px) {
   .centr-text{
     color: #FF8500;
     text-align: center;
@@ -287,6 +296,7 @@ a {
     font-weight: 400;
   }
 }
+
 .price__block{
   margin-left: auto;
   margin-right: auto;
@@ -315,6 +325,9 @@ a {
       bottom: 25%;
       }
   }
+
+
+  
 .img__price2{
   position: absolute;
   right: 0;
@@ -366,7 +379,6 @@ a {
     column-gap: 10px;
     font-weight: 400;
     font-size: 12px;
-    margin-left: -35px;
   }
 }
 @media only screen and (max-width : 500px) {
@@ -380,12 +392,12 @@ a {
 /* -----------Подвал-----------*/
 
 .footer{
-
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
+
 .footer__text{
   color: white;
   font-size: 24px;

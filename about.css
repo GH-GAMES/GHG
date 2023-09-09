@@ -142,7 +142,15 @@ li {
   margin: 0 auto;
   width: 65%;
 }
-
+@media only screen and (max-width : 500px) {
+  .mainContainer{
+    max-width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 
 .centr-text{
   color: #FFF;
@@ -547,7 +555,6 @@ text-align: center;
     column-gap: 10px;
     font-weight: 400;
     font-size: 12px;
-    margin-left: -35px;
   }
 }
 @media only screen and (max-width : 500px) {

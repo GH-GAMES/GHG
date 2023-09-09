@@ -145,6 +145,15 @@ list-style-type: none; /* Убираем маркеры */
   margin: 0 auto;
   width: 75%;
 }
+@media only screen and (max-width : 500px) {
+  .mainContainer{
+    max-width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .content-row {
   max-width: 1980px;
   display: flex;
@@ -162,6 +171,11 @@ list-style-type: none; /* Убираем маркеры */
 .content-item-img{
   padding-left: 20px;
 }
+@media only screen and (max-width : 500px) {
+  .content-item-img{
+    margin-left: -65px;
+  }
+}
 .content-item-img img{
   width: 85%;
   border-radius: 90px;
@@ -169,7 +183,7 @@ list-style-type: none; /* Убираем маркеры */
 @media only screen and (max-width : 500px) {
   .content-item-img img{
     width: 42%;
-    border-radius: 90px;
+    border-radius: 45px;
   }
 }
 
@@ -192,10 +206,10 @@ list-style-type: none; /* Убираем маркеры */
     font-weight: 400; 
     line-height: normal; 
     text-align: justify;
-    font-size: px; 
+    font-size: 17px; 
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-    margin-right: 20px;
-    margin-left: -80px;
+
+    margin-left: 80px;
   }
 }
 @media(max-width:769px){
@@ -220,7 +234,7 @@ list-style-type: none; /* Убираем маркеры */
   flex-shrink: 0; 
   font-weight: 400;
 }
-@media only screen and (max-width : 1330px) {
+@media only screen and (max-width : 500px) {
   .centr-text{
     color: #FF8500;
     text-align: center;
@@ -248,7 +262,7 @@ list-style-type: none; /* Убираем маркеры */
 
 
 
-
+/*------Line--------*/
 .line{
   margin-top: 20px;
   max-width: 741px;
@@ -299,6 +313,12 @@ list-style-type: none; /* Убираем маркеры */
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width : 1200px) {
+  .line,.line2,.line3,.line4,.line5{
+    height: 5px;
+  }
+}
+/*------Line--------*/
  .centr-text-Botton{
   margin-top: 20px;
   color: #FFF; 
@@ -306,7 +326,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 36px; 
   font-weight: 400;
  }
- @media only screen and (max-width : 1200px) {
+ @media only screen and (max-width : 500px) {
   .centr-text-Botton{
     color: #FFF; 
     text-align: center;
@@ -322,7 +342,7 @@ list-style-type: none; /* Убираем маркеры */
   font-size: 36px; 
   font-weight: 400;
    }
-   @media only screen and (max-width : 690px) {
+   @media only screen and (max-width : 500px) {
     .centr-text-Botton2{
       margin-top: 20px;
       color: #FFF; 
@@ -380,6 +400,20 @@ list-style-type: none; /* Убираем маркеры */
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 20px;
+}
+@media only screen and (max-width : 500px) {
+  .nav-list2{
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width : 500px) {
+  .h123{
+    height: 30px;
+    width: 30px;
+  }
 }
 
 /*-----------карусель-----------*/
@@ -484,12 +518,22 @@ label, a{ /*при наведении на стрелки или переклю�
   position: absolute;
 }
 
+
 #active label{ /*стиль отдельного переключателя*/
   border-radius: 5px; /*скругление углов*/
   display: inline-block; /*расположение в строку*/
   width: 30px;
   height: 9px;
   background: #4d4c4c;
+}
+@media only screen and (max-width : 500px) {
+  #active label{ /*стиль отдельного переключателя*/
+    border-radius: 5px; /*скругление углов*/
+    display: inline-block; /*расположение в строку*/
+    width: 15px;
+    height: 5px;
+    background: #4d4c4c;
+  }
 }
 #active{ /*расположение блока с переключателями*/
   margin: -20px;
@@ -540,12 +584,27 @@ transition: opacity 0.2s ease-out;
   font-size: 24px;
   font-weight: 400;
 }
+@media only screen and (max-width : 500px) {
+  .footer__text{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 .img__footer{
   position: absolute;
   max-width: 900px;
   max-height: 868px; 
   bottom: 2%;
   right: 0;
+}
+@media only screen and (max-width : 500px) {
+  .img__footer{
+  position: absolute;
+  width: 30%;
+  bottom: 3%;
+  right: 0;
+  }
 }
 
 .container2{
