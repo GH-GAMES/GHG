@@ -27,7 +27,9 @@ a {
   padding: 0;
   margin: 0;
 }
-
+ul {
+  list-style-type: none;
+}
 
 /*-----------Header-----------*/
 .container{
@@ -600,7 +602,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
-text-align: center;
+
   }
 }
 

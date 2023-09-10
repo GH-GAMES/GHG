@@ -76,7 +76,7 @@
 
         <div class="content-row">
           <div class="content-item content-item-img">
-            <img src="Image\RCCM_LOGO.png" alt="">
+            <img class="tre" src="Image\RCCM_LOGO.png" alt="">
           </div>
           <div class="content-item content-item-text">
             <p class="content-para">We are GH Games, and we’re making great game about radio controlled cars. If you ask man, doesn’t matter how old he is, but anyway, with high possibility he could say that he wanna buy rc car. Why? It’s awesome feelings while you’re driving your scaled rc model, and you can feel your car.</p>
@@ -103,7 +103,7 @@
     </main>
     
     <div class="container2">
-      <div class="img__footer"> <img class="imgFooter" src="Image\SIDE_IMG_1.png" alt=""></div>
+      <div class="img__footer"> <img class="imgFooter" src="Image\SIDE_IMG_1.pngA" alt=""></div>
     </div>
     
     <footer class="footer">
@@ -112,5 +112,15 @@
 
       <!--SCRIPT-->
     <script src="uparrow.js"></script>
+    <script>const listElements = document.querySelectorAll('body *')
+      const width = window.innerWidth
+      const elemetsUncorectWidth = []
+      for(let i = 0; i < listElements.length; i++){
+        if(listElements[i].getBoundingClientRect().width > width){
+          elemetsUncorectWidth.push(listElements[i])
+        }
+        
+      }
+      console.log(elemetsUncorectWidth);</script>
   </body>
 </html>
