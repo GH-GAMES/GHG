@@ -7,14 +7,3 @@ window.addEventListener("scroll", () => {
         ToTop.classList.remove("active");
     }
 })
-
-const listElements = document.querySelectorAll('body *')
-const width = window.innerWidth
-const elemetsUncorectWidth = []
-for(let i = 0; i < listElements.length; i++){
-  if(listElements[i].getBoundingClientRect().width > width){
-    elemetsUncorectWidth.push(listElements[i])
-  }
-  
-}
-console.log(elemetsUncorectWidth);

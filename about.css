@@ -1,84 +1,91 @@
 @import 'front.css';
 
-.body{
+.body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
+  background: linear-gradient(180deg, #4C4C4C 0%, #414141 16.15%, #111 100%) fixed;
   overflow-x: hidden;
-  -webkit-user-select: none; 
-  -webkit-touch-callout: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;   
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-    width: 0;
-}
-a { 
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
-} 
 
-*{
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  /* Отменяем подчеркивание у ссылки */
+}
+
+* {
   font-family: 'Pompadur';
   padding: 0;
   margin: 0;
 }
+
 ul {
   list-style-type: none;
 }
 
 /*-----------Header-----------*/
-.container{
+.container {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
   width: 70%;
 }
 
-.header{
+.header {
   padding-left: 0px;
   height: 52px;
   background-color: rgb(0, 0, 0);
 }
 
-.header-nav{
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  align-items:center;
+  align-items: center;
 }
 
-.logo{
-  color: #ffffff; 
-  font-size: 24px; 
-  font-weight: 400; 
-  white-space:nowrap;
+.logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
   margin-top: 14px;
 }
+
 @media only screen and (max-width : 500px) {
-  .logo{
-    color: #ffffff; 
-    font-size: 12px; 
-    font-weight: 400; 
-    white-space:nowrap;
+  .logo {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
     margin-top: 21px;
     margin-right: 20px;
     margin-left: -20px;
   }
 }
+
 /*Nav*/
-.nav-list{
+.nav-list {
   display: flex;
   column-gap: 50px;
   font-weight: 400;
   font-size: 24px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-list{
+  .nav-list {
     display: flex;
     column-gap: 25px;
     font-weight: 400;
@@ -86,36 +93,39 @@ ul {
   }
 }
 
-.nav-item{
+.nav-item {
   margin-top: 14px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-item{
+  .nav-item {
     margin-top: 21px;
   }
 }
 
-.nav-link{
+.nav-link {
   color: #ffffff;
   font-weight: 400;
-  white-space:nowrap;
-  
+  white-space: nowrap;
+
 }
 
-.img-logo{
+.img-logo {
   display: block;
   width: 114px;
   height: 114px;
   margin-top: 20px;
   margin-left: 10px;
 }
-.img-logo img{
+
+.img-logo img {
   width: 100%;
   height: 100%;
   display: block;
 }
+
 @media only screen and (max-width : 500px) {
-  .img-logo{
+  .img-logo {
     display: block;
     width: 57px;
     height: 57px;
@@ -123,6 +133,7 @@ ul {
     margin-left: 20px;
   }
 }
+
 /*-----------Header-----------*/
 
 
@@ -136,14 +147,15 @@ ul {
 
 
 /*-----------Main-----------*/
-.mainContainer{
+.mainContainer {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
   width: 65%;
 }
+
 @media only screen and (max-width : 500px) {
-  .mainContainer{
+  .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
     position: relative;
@@ -152,29 +164,30 @@ ul {
   }
 }
 
-.centr-text{
+.centr-text {
   color: #FFF;
   text-align: center;
   font-family: Bebas Neue;
   font-size: 150px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .centr-text{
+  .centr-text {
     color: #FFF;
     text-align: center;
     font-family: Bebas Neue;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
 
 /*-----------Line-----------*/
-.line{
+.line {
   margin-bottom: 74px;
   max-width: 700px;
   border: none;
@@ -182,8 +195,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line{
+  .line {
     margin-bottom: 20px;
     max-width: 700px;
     border: none;
@@ -192,7 +206,8 @@ ul {
     position: relative;
   }
 }
-.line2{
+
+.line2 {
   margin-top: 77px;
   max-width: 1800px;
   border: none;
@@ -200,8 +215,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line2{
+  .line2 {
     margin-top: 20px;
     max-width: 1800px;
     border: none;
@@ -210,7 +226,8 @@ ul {
     position: relative;
   }
 }
-.line3{
+
+.line3 {
   margin-top: 15px;
   max-width: 1800px;
   border: none;
@@ -218,7 +235,8 @@ ul {
   background-color: #000;
   position: relative;
 }
-.line4{
+
+.line4 {
   margin-top: 41px;
   max-width: 1800px;
   border: none;
@@ -226,7 +244,8 @@ ul {
   background-color: #000;
   position: relative;
 }
-.line5{
+
+.line5 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 420px;
@@ -235,8 +254,9 @@ ul {
   background-color: #000000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line5{
+  .line5 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 210px;
@@ -246,7 +266,8 @@ ul {
     position: relative;
   }
 }
-.line6{
+
+.line6 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 350px;
@@ -255,8 +276,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line6{
+  .line6 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 175px;
@@ -266,7 +288,8 @@ ul {
     position: relative;
   }
 }
-.line7{
+
+.line7 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 800px;
@@ -275,8 +298,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line7{
+  .line7 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 210px;
@@ -287,7 +311,7 @@ ul {
   }
 }
 
-.line8{
+.line8 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 220px;
@@ -296,8 +320,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line8{
+  .line8 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 110px;
@@ -308,7 +333,7 @@ ul {
   }
 }
 
-.line9{
+.line9 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 410px;
@@ -317,8 +342,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line9{
+  .line9 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 205px;
@@ -328,7 +354,8 @@ ul {
     position: relative;
   }
 }
-.line10{
+
+.line10 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 685px;
@@ -337,8 +364,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line10{
+  .line10 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 175px;
@@ -348,7 +376,8 @@ ul {
     position: relative;
   }
 }
-.line11{
+
+.line11 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 310px;
@@ -357,8 +386,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line11{
+  .line11 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 155px;
@@ -368,7 +398,8 @@ ul {
     position: relative;
   }
 }
-.line12{
+
+.line12 {
   margin-top: 5px;
   margin-bottom: 33px;
   max-width: 155px;
@@ -377,8 +408,9 @@ ul {
   background-color: #000;
   position: relative;
 }
+
 @media only screen and (max-width : 500px) {
-  .line12{
+  .line12 {
     margin-top: 5px;
     margin-bottom: 20px;
     max-width: 45px;
@@ -388,15 +420,34 @@ ul {
     position: relative;
   }
 }
-.line,.line2,.line3,.line4{
+
+.line,
+.line2,
+.line3,
+.line4 {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media only screen and (max-width : 500px) {
-  .line,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,.line5,.line10,.line11,.line12{
+
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line6,
+  .line7,
+  .line8,
+  .line9,
+  .line5,
+  .line10,
+  .line11,
+  .line12 {
     height: 5px;
   }
 }
+
 /*-----------Line-----------*/
 
 
@@ -404,10 +455,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-bottom: 56.25%;
+  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
   height: 0;
   overflow: hidden;
 }
+
 .thumb-wrap iframe {
   position: absolute;
   top: 0;
@@ -418,28 +471,29 @@ ul {
   outline-width: 0;
 }
 
-.centr-text2{
+.centr-text2 {
   padding-top: 15px;
   color: #FFF;
   text-align: center;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .centr-text2{
+  .centr-text2 {
     padding-top: 15px;
     color: #FFF;
     text-align: center;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
 
-.centr-text3{
+.centr-text3 {
   padding-top: 30px;
   padding-bottom: 32px;
   color: #FFF;
@@ -448,10 +502,11 @@ ul {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .centr-text3{
+  .centr-text3 {
     padding-top: 30px;
     padding-bottom: 32px;
     color: #FFF;
@@ -460,46 +515,49 @@ ul {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
 
-.textGH{
+.textGH {
   color: #FFF;
   font-family: Inter;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .textGH{
+  .textGH {
     color: #FFF;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
-.Developers{
+
+.Developers {
   padding-top: 43px;
   color: #FFF;
   text-align: left;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .Developers{
+  .Developers {
     padding-top: 60px;
     color: #FFF;
     text-align: left;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
 
@@ -515,12 +573,13 @@ ul {
 
 
 /*----------DewTeam--------*/
-.imgMember{
+.imgMember {
   max-width: 400px;
   max-height: 400px;
 }
+
 @media only screen and (max-width : 500px) {
-  .imgMember{
+  .imgMember {
     max-width: 10px;
     max-height: 10px;
   }
@@ -536,72 +595,79 @@ ul {
   padding-bottom: 40px;
 }
 
-.content-item-img img{
+.content-item-img img {
   max-width: 400px;
   max-height: 400px;
   border-radius: 50px;
   margin-right: 50px;
 }
+
 @media only screen and (max-width : 500px) {
-  .content-item-img img{
+  .content-item-img img {
     max-width: 120px;
     max-height: 120px;
     border-radius: 25px;
     margin-right: 25px;
   }
 }
+
 .content-para {
-  color: #FFF; 
+  color: #FFF;
   margin-top: 8px;
-  font-weight: 400; 
-  line-height: normal; 
+  font-weight: 400;
+  line-height: normal;
   text-align: justify;
-  font-size: 64px; 
+  font-size: 64px;
 }
+
 @media only screen and (max-width : 500px) {
-  .content-para{
-    color: #FFF; 
+  .content-para {
+    color: #FFF;
     margin-top: 8px;
-    font-weight: 400; 
-    line-height: normal; 
+    font-weight: 400;
+    line-height: normal;
     text-align: justify;
-    font-size: 32px; 
+    font-size: 32px;
   }
 }
+
 .content-para2 {
-  color: #FFF; 
+  color: #FFF;
   margin-top: 8px;
-  font-weight: 400; 
-  line-height: normal; 
+  font-weight: 400;
+  line-height: normal;
   text-align: justify;
-  font-size: 40px; 
+  font-size: 40px;
 }
+
 @media only screen and (max-width : 500px) {
-  .content-para2{
-    color: #FFF; 
+  .content-para2 {
+    color: #FFF;
     margin-top: 8px;
-    font-weight: 400; 
-    line-height: normal; 
+    font-weight: 400;
+    line-height: normal;
     text-align: justify;
-    font-size: 10px; 
+    font-size: 10px;
   }
 }
-.nav-item3{
-color: #FFF;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
+
+.nav-item3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-item3{
+  .nav-item3 {
     color: #FFF;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
 
   }
 }
@@ -629,15 +695,16 @@ line-height: normal;
 
 /*------------------*/
 
-.nav-list2{
+.nav-list2 {
   padding-top: 389px;
   display: flex;
   column-gap: 25px;
   font-weight: 400;
   font-size: 24px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-list2{
+  .nav-list2 {
     padding-top: 100px;
     display: flex;
     column-gap: 10px;
@@ -645,8 +712,9 @@ line-height: normal;
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width : 500px) {
-  .h123{
+  .h123 {
     height: 30px;
     width: 30px;
   }
@@ -655,19 +723,21 @@ line-height: normal;
 
 /* -----------Подвал-----------*/
 
-.footer{
+.footer {
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-.footer__text{
+
+.footer__text {
   color: white;
   font-size: 24px;
   font-weight: 400;
 }
+
 @media only screen and (max-width : 500px) {
-  .footer__text{
+  .footer__text {
     color: white;
     font-size: 12px;
     font-weight: 400;

@@ -1,84 +1,91 @@
 @import 'front.css';
 
-.body{
+.body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg,#4C4C4C 0%, #414141 16.15%,#111 100%) fixed;
+  background: linear-gradient(180deg, #4C4C4C 0%, #414141 16.15%, #111 100%) fixed;
   overflow-x: hidden;
-  -webkit-user-select: none; 
-  -webkit-touch-callout: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;   
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-    width: 0;
-}
-a { 
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
-} 
 
-*{
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  /* Отменяем подчеркивание у ссылки */
+}
+
+* {
   font-family: 'Pompadur';
   padding: 0;
   margin: 0;
 }
+
 ul {
   list-style-type: none;
 }
 
 /*-----------Header-----------*/
-.container{
+.container {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
   width: 70%;
 }
 
-.header{
+.header {
   padding-left: 0px;
   height: 52px;
   background-color: rgb(0, 0, 0);
 }
 
-.header-nav{
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  align-items:center;
+  align-items: center;
 }
 
-.logo{
-  color: #ffffff; 
-  font-size: 24px; 
-  font-weight: 400; 
-  white-space:nowrap;
+.logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
   margin-top: 14px;
 }
+
 @media only screen and (max-width : 500px) {
-  .logo{
-    color: #ffffff; 
-    font-size: 12px; 
-    font-weight: 400; 
-    white-space:nowrap;
+  .logo {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
     margin-top: 21px;
     margin-right: 20px;
     margin-left: -20px;
   }
 }
+
 /*Nav*/
-.nav-list{
+.nav-list {
   display: flex;
   column-gap: 50px;
   font-weight: 400;
   font-size: 24px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-list{
+  .nav-list {
     display: flex;
     column-gap: 25px;
     font-weight: 400;
@@ -86,36 +93,39 @@ ul {
   }
 }
 
-.nav-item{
+.nav-item {
   margin-top: 14px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-item{
+  .nav-item {
     margin-top: 21px;
   }
 }
 
-.nav-link{
+.nav-link {
   color: #ffffff;
   font-weight: 400;
-  white-space:nowrap;
-  
+  white-space: nowrap;
+
 }
 
-.img-logo{
+.img-logo {
   display: block;
   width: 114px;
   height: 114px;
   margin-top: 20px;
   margin-left: 10px;
 }
-.img-logo img{
+
+.img-logo img {
   width: 100%;
   height: 100%;
   display: block;
 }
+
 @media only screen and (max-width : 500px) {
-  .img-logo{
+  .img-logo {
     display: block;
     width: 57px;
     height: 57px;
@@ -123,6 +133,7 @@ ul {
     margin-left: -20px;
   }
 }
+
 /*-----------Header-----------*/
 
 
@@ -136,15 +147,16 @@ ul {
 
 
 /*-----------Main-----------*/
-.mainContainer{
+.mainContainer {
   max-width: 1400px;
   padding: 0 30px;
   position: relative;
   margin: 0 auto;
   width: 70%;
 }
+
 @media only screen and (max-width : 500px) {
-  .mainContainer{
+  .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
     position: relative;
@@ -153,42 +165,44 @@ ul {
   }
 }
 
-.centr-text{
+.centr-text {
   padding-top: 100px;
   color: #FF8500;
   text-align: center;
   font-size: 96px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   font-weight: 400;
 }
+
 @media only screen and (max-width : 500px) {
-  .centr-text{
+  .centr-text {
     color: #FF8500;
     text-align: center;
     font-size: 45px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     font-weight: 400;
   }
 }
 
-.centr-text-Botton{
+.centr-text-Botton {
   padding-top: 20px;
-  color: #FFF; 
+  color: #FFF;
   text-align: center;
-  font-size: 36px; 
+  font-size: 36px;
   font-weight: 400;
 }
+
 @media only screen and (max-width : 690px) {
-  .centr-text-Botton{
-  color: #FFF; 
-  text-align: center;
-  font-size: 18px; 
-  font-weight: 400;
+  .centr-text-Botton {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 
 /*--------Line----------*/
-.line{
+.line {
   margin-top: 20px;
   max-width: 741px;
   border: none;
@@ -196,7 +210,7 @@ ul {
   background-color: #000;
 }
 
-.line2{
+.line2 {
   margin-top: 117px;
   max-width: 1400px;
   border: none;
@@ -205,8 +219,9 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 @media only screen and (max-width : 500px) {
-  .line2{
+  .line2 {
     margin-top: 58px;
     max-width: 1400px;
     border: none;
@@ -216,7 +231,8 @@ ul {
     padding-right: 20px;
   }
 }
-.line3{
+
+.line3 {
   margin-top: 20px;
   max-width: 1400px;
   border: none;
@@ -225,7 +241,8 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
-.line4{
+
+.line4 {
   margin-top: 61px;
   max-width: 1400px;
   border: none;
@@ -234,8 +251,9 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 @media only screen and (max-width : 500px) {
-  .line4{
+  .line4 {
     margin-top: 30px;
     max-width: 1400px;
     border: none;
@@ -245,7 +263,8 @@ ul {
     padding-right: 20px;
   }
 }
-.line5{
+
+.line5 {
   margin-top: 25px;
   max-width: 1400px;
   border: none;
@@ -254,77 +273,98 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
-.line,.line2,.line3,.line4,line5{
+
+.line,
+.line2,
+.line3,
+.line4,
+line5 {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media only screen and (max-width : 500px) {
-  .line,.line2,.line3,.line4,.line5{
+
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5 {
     height: 5px;
   }
 }
+
 /*--------Line----------*/
-.ImgDiscord{
+.ImgDiscord {
   margin-left: auto;
   margin-right: auto;
   padding-top: 76px;
   width: 100%;
   max-height: 787px;
   max-width: 1400px;
-  display: block; /* Блочный элемент (для старых браузеров) */
-  text-align: center; /* Выравнивание по центру */
+  display: block;
+  /* Блочный элемент (для старых браузеров) */
+  text-align: center;
+  /* Выравнивание по центру */
 }
+
 @media only screen and (max-width : 500px) {
-  .ImgDiscord{
+  .ImgDiscord {
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     width: 100%;
     max-height: 787px;
     max-width: 1400px;
-    display: block; /* Блочный элемент (для старых браузеров) */
-    text-align: center; /* Выравнивание по центру */
+    display: block;
+    /* Блочный элемент (для старых браузеров) */
+    text-align: center;
+    /* Выравнивание по центру */
   }
 }
-.oval{
+
+.oval {
   margin-left: auto;
   margin-right: auto;
   margin-top: 34px;
   padding-bottom: 40px;
   max-width: 1400px;
   max-height: 152px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   border-radius: 50px;
-  background: #5F5F5F; 
+  background: #5F5F5F;
 }
+
 @media only screen and (max-width : 500px) {
-  .oval{
+  .oval {
     margin-left: auto;
     margin-right: auto;
     margin-top: 34px;
     padding-bottom: 20px;
     max-width: 700px;
     max-height: 76px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     border-radius: 25px;
-    background: #5F5F5F; 
+    background: #5F5F5F;
   }
 }
-.DisText{
+
+.DisText {
   margin-left: auto;
   margin-right: auto;
-  font-family: Voces; 
+  font-family: Voces;
   padding-top: 20px;
   color: #FFF;
   text-align: center;
   font-size: 36px;
   font-weight: 400;
 }
+
 @media only screen and (max-width : 500px) {
-  .DisText{
+  .DisText {
     margin-left: auto;
     margin-right: auto;
-    font-family: Voces; 
+    font-family: Voces;
     padding-top: 20px;
     color: #FFF;
     text-align: center;
@@ -333,98 +373,107 @@ ul {
   }
 }
 
-.price__block{
+.price__block {
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
-.nav-list3{
+
+.nav-list3 {
   padding-left: 30px;
   padding-top: 27px;
 }
 
 @media only screen and (max-width : 500px) {
-  .tmp{
+  .tmp {
     width: 100%;
     height: 100%;
   }
 }
-.img__price{
+
+.img__price {
   position: absolute;
   right: 0;
   bottom: -65%;
-  }
-  @media only screen and (max-width : 500px) {
-    .img__price{
-      position: absolute;
-      right: 0;
-      bottom: 45%;
-      width: 25%;
-      }
-  }
-
-
-  
-.img__price2{
-  position: absolute;
-  right: 0;
-  bottom: -30%;
 }
+
 @media only screen and (max-width : 500px) {
-  .img__price2{
+  .img__price {
     position: absolute;
     right: 0;
     bottom: 45%;
     width: 25%;
-    }
+  }
 }
-.img__price3{
+
+
+
+.img__price2 {
   position: absolute;
   right: 0;
   bottom: -30%;
 }
+
 @media only screen and (max-width : 500px) {
-  .img__price3{
+  .img__price2 {
+    position: absolute;
+    right: 0;
+    bottom: 45%;
+    width: 25%;
+  }
+}
+
+.img__price3 {
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+}
+
+@media only screen and (max-width : 500px) {
+  .img__price3 {
     position: absolute;
     right: 0;
     bottom: 38%;
     width: 25%;
-    }
+  }
 }
 
 
-.nav-item3{
+.nav-item3 {
   color: #FFF;
   font-family: Voces;
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal; 
+  line-height: normal;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-item3{
+  .nav-item3 {
     color: #FFF;
     font-family: Voces;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
   }
 }
 
 /*------------------*/
 
 
- .nav-list2{
-  list-style-type: none; /* Убираем маркеры */
+.nav-list2 {
+  list-style-type: none;
+  /* Убираем маркеры */
   padding-top: 162px;
   display: flex;
   column-gap: 25px;
   font-weight: 400;
   font-size: 24px;
 }
+
 @media only screen and (max-width : 500px) {
-  .nav-list2{
+  .nav-list2 {
     padding-top: 100px;
     display: flex;
     column-gap: 10px;
@@ -432,8 +481,9 @@ ul {
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width : 500px) {
-  .h123{
+  .h123 {
     height: 30px;
     width: 30px;
   }
@@ -442,20 +492,21 @@ ul {
 
 /* -----------Подвал-----------*/
 
-.footer{
+.footer {
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.footer__text{
+.footer__text {
   color: white;
   font-size: 24px;
   font-weight: 400;
 }
+
 @media only screen and (max-width : 500px) {
-  .footer__text{
+  .footer__text {
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -463,20 +514,20 @@ ul {
 }
 
 .to-top {
-    bottom: -75px;
-    width: 50px;
-    height: 50px;
-    right: 25px;
-    position: fixed;
-    opacity: 0;
-    z-index: 9999;
-    transition: all 0.5s;
-    pointer-events: none;
+  bottom: -75px;
+  width: 50px;
+  height: 50px;
+  right: 25px;
+  position: fixed;
+  opacity: 0;
+  z-index: 9999;
+  transition: all 0.5s;
+  pointer-events: none;
 }
 
-    .to-top.active {
-        bottom: 25px;
-        opacity: 0.4;
-        pointer-events: auto;
-        z-index: 9999;
-    }
+.to-top.active {
+  bottom: 25px;
+  opacity: 0.4;
+  pointer-events: auto;
+  z-index: 9999;
+}
