@@ -231,7 +231,7 @@ ul {
   }
 }
 
-@media(max-width:769px) {
+@media(max-width:500px) {
   .content-row {
     flex-direction: column;
   }
@@ -508,7 +508,7 @@ ul {
   position: absolute;
   max-width: 900px;
   max-height: 868px;
-  bottom: 2%;
+  bottom: 50%;
   right: 0;
 }
 
@@ -516,17 +516,11 @@ ul {
   .img__footer {
     position: absolute;
     width: 30%;
-    bottom: -91%;
+    bottom: 85%;
     right: 0;
   }
 }
 
-.container2 {
-  max-width: 1980px;
-  padding: 0 30px;
-  margin: 0 auto;
-  width: 75%;
-}
 
 /* -----------Подвал-----------*/
 img {
