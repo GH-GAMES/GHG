@@ -1,0 +1,370 @@
+@import 'front.css';
+
+.body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #4C4C4C 0%, #414141 16.15%, #111 100%) fixed;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    /* Отменяем подчеркивание у ссылки */
+}
+
+* {
+    font-family: 'Pompadur';
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*-----------Header-----------*/
+.container {
+    max-width: 1980px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.header {
+    padding-left: 0px;
+    height: 52px;
+    background-color: rgb(0, 0, 0);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 14px;
+}
+
+@media only screen and (max-width : 500px) {
+    .logo {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-top: 21px;
+        margin-right: 20px;
+        margin-left: -20px;
+    }
+}
+
+/*Nav*/
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media only screen and (max-width : 500px) {
+    .nav-list {
+        display: flex;
+        column-gap: 25px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.nav-item {
+    margin-top: 14px;
+}
+
+@media only screen and (max-width : 500px) {
+    .nav-item {
+        margin-top: 21px;
+    }
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+.img-logo {
+    display: block;
+    width: 114px;
+    height: 114px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.img-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media only screen and (max-width : 500px) {
+    .img-logo {
+        display: block;
+        width: 57px;
+        height: 57px;
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+}
+/*-----------Header-----------*/
+
+
+/*-----------*Main-----------*/
+.mainContainer {
+    max-width: 1980px;
+    padding: 0 30px;
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media only screen and (max-width : 500px) {
+    .mainContainer {
+        max-width: 1980px;
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+.centr-text {
+    color: #FF8500;
+    text-align: center;
+    font-size: 96px;
+    flex-shrink: 0;
+    font-weight: 400;
+}
+@media only screen and (max-width : 500px) {
+    .centr-text {
+        color: #FF8500;
+        text-align: center;
+        font-size: 30px;
+        flex-shrink: 0;
+        font-weight: 400;
+    }
+}
+
+.centr-text-Botton {
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  @media only screen and (max-width : 500px) {
+    .centr-text-Botton {
+      color: #FFF;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+    }
+}
+
+.centr-text-Botton2 {
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  @media only screen and (max-width : 500px) {
+    .centr-text-Botton2 {
+      margin-top: 20px;
+      color: #FFF;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+    }
+}
+
+
+
+.img {
+  max-height: 548px;
+  max-width: 548px;
+  padding-left: 20px;
+  position: absolute;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.header-heading {
+  color: #FFF;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 1237px;
+  max-height: 533px;
+  float: left;
+}
+
+.rightimg {
+  float: left;
+  /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0;
+  /* Отступы вокруг картинки */
+  width: 548px;
+  height: 548px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.text {
+  color: #FFF;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.news {
+  font-size: 180px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+}
+/*-----------*Main-----------*/
+
+/*-----------*Line-----------*/
+.line {
+    margin-top: 20px;
+    max-width: 741px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+  }
+  
+  .line2 {
+    margin-top: 20px;
+    max-width: 1360px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .line3 {
+    max-width: 1360px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .line4 {
+    max-width: 1360px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .line5 {
+    max-width: 1360px;
+    border: none;
+    height: 10px;
+    background-color: #000;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 180px;
+  }
+  
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media only screen and (max-width : 1200px) {
+  
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5 {
+      height: 5px;
+    }
+  }
+/*-----------*Line-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.to-top {
+    bottom: -75px;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    position: fixed;
+    opacity: 0;
+    z-index: 9999;
+    transition: all 0.5s;
+    pointer-events: none;
+  }
+  
+  .to-top.active {
+    bottom: 25px;
+    opacity: 0.4;
+    pointer-events: auto;
+    z-index: 9999;
+  }

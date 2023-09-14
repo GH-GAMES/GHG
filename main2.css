@@ -266,15 +266,6 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
-  .centr-text {
-    color: #FF8500;
-    text-align: center;
-    font-size: 90px;
-    flex-shrink: 0;
-    font-weight: 400;
-  }
-}
 
 @media only screen and (max-width : 500px) {
   .centr-text {
