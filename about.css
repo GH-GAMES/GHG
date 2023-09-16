@@ -64,7 +64,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .logo {
     color: #ffffff;
     font-size: 12px;
@@ -84,7 +84,7 @@ ul {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list {
     display: flex;
     column-gap: 25px;
@@ -97,7 +97,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-item {
     margin-top: 21px;
   }
@@ -124,7 +124,7 @@ ul {
   display: block;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img-logo {
     display: block;
     width: 57px;
@@ -154,7 +154,7 @@ ul {
   width: 65%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
@@ -174,7 +174,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .centr-text {
     color: #FFF;
     text-align: center;
@@ -196,7 +196,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line {
     margin-bottom: 20px;
     max-width: 700px;
@@ -216,7 +216,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line2 {
     margin-top: 20px;
     max-width: 1800px;
@@ -255,7 +255,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line5 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -277,7 +277,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line6 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -299,7 +299,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line7 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -321,7 +321,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line8 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -343,7 +343,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line9 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -365,7 +365,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line10 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -387,7 +387,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line11 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -409,7 +409,7 @@ ul {
   position: relative;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line12 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -429,7 +429,7 @@ ul {
   margin-right: auto;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
 
   .line,
   .line2,
@@ -481,7 +481,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .centr-text2 {
     padding-top: 15px;
     color: #FFF;
@@ -505,7 +505,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .centr-text3 {
     padding-top: 30px;
     padding-bottom: 32px;
@@ -528,7 +528,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .textGH {
     color: #FFF;
     font-family: Inter;
@@ -549,7 +549,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .Developers {
     padding-top: 60px;
     color: #FFF;
@@ -578,7 +578,7 @@ ul {
   max-height: 400px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .imgMember {
     max-width: 10px;
     max-height: 10px;
@@ -602,7 +602,7 @@ ul {
   margin-right: 50px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .content-item-img img {
     max-width: 120px;
     max-height: 120px;
@@ -620,7 +620,7 @@ ul {
   font-size: 64px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .content-para {
     color: #FFF;
     margin-top: 8px;
@@ -640,7 +640,7 @@ ul {
   font-size: 40px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .content-para2 {
     color: #FFF;
     margin-top: 8px;
@@ -660,7 +660,7 @@ ul {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-item3 {
     color: #FFF;
     font-family: Inter;
@@ -703,7 +703,7 @@ ul {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list2 {
     padding-top: 100px;
     display: flex;
@@ -713,7 +713,7 @@ ul {
   }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .h123 {
     height: 30px;
     width: 30px;
@@ -736,7 +736,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .footer__text {
     color: white;
     font-size: 12px;

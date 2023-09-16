@@ -64,7 +64,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .logo {
     color: #ffffff;
     font-size: 12px;
@@ -84,7 +84,7 @@ ul {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list {
     display: flex;
     column-gap: 25px;
@@ -97,7 +97,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-item {
     margin-top: 21px;
   }
@@ -124,7 +124,7 @@ ul {
   display: block;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img-logo {
     display: block;
     width: 57px;
@@ -155,7 +155,7 @@ ul {
   width: 70%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
@@ -174,7 +174,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .centr-text {
     color: #FF8500;
     text-align: center;
@@ -192,7 +192,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 567px) {
   .centr-text-Botton {
     color: #FFF;
     text-align: center;
@@ -220,7 +220,7 @@ ul {
   padding-right: 20px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line2 {
     margin-top: 58px;
     max-width: 1400px;
@@ -252,7 +252,7 @@ ul {
   padding-right: 20px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line4 {
     margin-top: 30px;
     max-width: 1400px;
@@ -283,7 +283,7 @@ line5 {
   margin-right: auto;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
 
   .line,
   .line2,
@@ -308,7 +308,7 @@ line5 {
   /* Выравнивание по центру */
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .ImgDiscord {
     margin-left: auto;
     margin-right: auto;
@@ -335,7 +335,7 @@ line5 {
   background: #5F5F5F;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .oval {
     margin-left: auto;
     margin-right: auto;
@@ -360,7 +360,7 @@ line5 {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .DisText {
     margin-left: auto;
     margin-right: auto;
@@ -384,7 +384,7 @@ line5 {
   padding-top: 27px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .tmp {
     width: 100%;
     height: 100%;
@@ -397,7 +397,7 @@ line5 {
   bottom: -65%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img__price {
     position: absolute;
     right: 0;
@@ -414,7 +414,7 @@ line5 {
   bottom: -30%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img__price2 {
     position: absolute;
     right: 0;
@@ -429,7 +429,7 @@ line5 {
   bottom: -30%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img__price3 {
     position: absolute;
     right: 0;
@@ -448,7 +448,7 @@ line5 {
   line-height: normal;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-item3 {
     color: #FFF;
     font-family: Voces;
@@ -472,7 +472,7 @@ line5 {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list2 {
     padding-top: 100px;
     display: flex;
@@ -482,7 +482,7 @@ line5 {
   }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .h123 {
     height: 30px;
     width: 30px;
@@ -505,7 +505,7 @@ line5 {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .footer__text {
     color: white;
     font-size: 12px;

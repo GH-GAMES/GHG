@@ -64,7 +64,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .logo {
     color: #ffffff;
     font-size: 12px;
@@ -84,7 +84,7 @@ ul {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list {
     display: flex;
     column-gap: 25px;
@@ -97,7 +97,7 @@ ul {
   margin-top: 14px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-item {
     margin-top: 21px;
   }
@@ -124,7 +124,7 @@ ul {
   display: block;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .img-logo {
     display: block;
     width: 57px;
@@ -154,7 +154,7 @@ ul {
   width: 75%;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
@@ -201,7 +201,7 @@ ul {
 
 }
 
-@media(max-width:769px) {
+@media(max-width:567px) {
   .content-row {
     flex-direction: column;
   }
@@ -226,7 +226,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .centr-text {
     color: #FF8500;
     text-align: center;
@@ -244,7 +244,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 567px) {
   .centr-text-Botton2 {
     margin-top: 20px;
     color: #FFF;
@@ -263,7 +263,7 @@ ul {
   font-family: Inter;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .TextContact {
     padding-top: 26px;
     color: #FFF;
@@ -284,7 +284,7 @@ ul {
 
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .TextContact2 {
     padding-top: 26px;
     color: #FFF;
@@ -314,7 +314,7 @@ ul {
   padding-right: 20px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .line2 {
     margin-top: 58px;
     max-width: 1793px;
@@ -355,7 +355,7 @@ ul {
   margin-right: auto;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
 
   .line,
   .line2,
@@ -374,7 +374,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 567px) {
   .centr-text-Botton {
     color: #FFF;
     text-align: center;
@@ -391,7 +391,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 567px) {
   .centr-text-Botton2 {
     margin-top: 20px;
     color: #FFF;
@@ -456,7 +456,7 @@ ul {
   font-size: 24px;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .nav-list2 {
     padding-top: 100px;
     display: flex;
@@ -466,7 +466,7 @@ ul {
   }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .h123 {
     height: 30px;
     width: 30px;
@@ -489,7 +489,7 @@ ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 567px) {
   .footer__text {
     color: white;
     font-size: 12px;
