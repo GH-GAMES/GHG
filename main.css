@@ -11,6 +11,11 @@
   -ms-user-select: none;
   user-select: none;
 }
+@media (max-width:500px){
+  body{
+      orientation: landscape;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -237,13 +242,6 @@ ul {
   }  
 }
 
-.centr-text {
-  color: #FF8500;
-  text-align: center;
-  font-size: 96px;
-  flex-shrink: 0;
-  font-weight: 400;
-}
 
 
 @media only screen and (min-width : 500px) 
@@ -257,19 +255,10 @@ ul {
 }
 }
 
-@media only screen and (max-width : 500px) {
-  .centr-text {
-    color: #FF8500;
-    text-align: center;
-    font-size: 30px;
-    flex-shrink: 0;
-    font-weight: 400;
-  }
-}
 
 .iii {
   float: left;
-  margin-left: -50px;
+  margin-left: -50px;++=
   width: 60%;
   border-radius: 25px;
   padding-right: 15px;
@@ -288,6 +277,22 @@ text-align: justify;
 
 
 
+.centr-text {
+  color: #FF8500;
+  text-align: center;
+  font-size: 96px;
+  flex-shrink: 0;
+  font-weight: 400;
+}
+@media only screen and (max-width : 500px) {
+  .centr-text {
+    color: #FF8500;
+    text-align: center;
+    font-size: 30px;
+    flex-shrink: 0;
+    font-weight: 400;
+  }
+}
 
 
 
