@@ -7,8 +7,3 @@ window.addEventListener("scroll", () => {
         ToTop.classList.remove("active");
     }
 })
-screen.addEventListener("orientationchange", function () {
-    console.log("The orientation of the screen is: " + screen.orientation);
-  });
-  screen.lockOrientation("landscape");
-  "orientation": "portrait"
