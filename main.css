@@ -343,6 +343,18 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media only screen and (max-width : 567px) {
+  .line4 {
+    max-width: 1360px;
+    border: none;
+    background-color: #000;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .line5 {
   max-width: 1360px;
