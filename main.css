@@ -532,12 +532,13 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
-  background: url('prev.pngа') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('BTN_LEFT_ARROW.png') no-repeat; /*заливка фона картинкой без повторений*/
   float: left;
-  margin: 0 0 0 0; /*сдвиг влево*/
+  margin-right: 150px;
+  margin-top: -310px;
   display: block;
-  height: 68px;
-  width: 68px;
+  height: 400px;
+  width: 400px;
 }
 
 /*настройка переключения и положения для правой стрелки*/
@@ -546,14 +547,45 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1){
-  background: url('next.pngа') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('BTN_RIGHT_ARROW.png') no-repeat; /*заливка фона картинкой без повторений*/
   float: right;
-  margin: 0 0 0 0;/*сдвиг вправо*/
+  margin-right: -250px;
+  margin-top: -310px;
   display: block;
-  height: 68px;
-  width: 68px;
+  height: 400px;
+  width: 400px;
 }
-
+@media only screen and (max-width : 500px) {
+  #switch1:checked ~ #controls label:nth-child(5), 
+  #switch2:checked ~ #controls label:nth-child(1),
+  #switch3:checked ~ #controls label:nth-child(2),
+  #switch4:checked ~ #controls label:nth-child(3),
+  #switch5:checked ~ #controls label:nth-child(4){
+    background: url('BTN_LEFT_ARROW.png') no-repeat; /*заливка фона картинкой без повторений*/
+    float: left;
+    margin-left: -20px;
+    margin-top: -110px;
+    display: block;
+    height: 100px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width : 500px) {
+  /*настройка переключения и положения для правой стрелки*/
+  #switch1:checked ~ #controls label:nth-child(2), 
+  #switch2:checked ~ #controls label:nth-child(3),
+  #switch3:checked ~ #controls label:nth-child(4),
+  #switch4:checked ~ #controls label:nth-child(5),
+  #switch5:checked ~ #controls label:nth-child(1){
+    background: url('BTN_RIGHT_ARROW.png') no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+    margin-right: 20px;
+    margin-top: -110px;
+    display: block;
+    height: 100px;
+    width: 100px;
+  }
+}
 label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
   cursor: pointer;
 }
