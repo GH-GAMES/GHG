@@ -245,9 +245,97 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
+/*--------------*/
+.content-row {
+  max-width: 1980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-item {
+  width: 80%;
+  min-width: 290px;
+}
+
+.content-item-img {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width : 500px) {
+  .content-item-img {
+    margin-left: -65px;
+  }
+}
+
+.content-item-img img {
+  width: 85%;
+  border-radius: 90px;
+}
+
+@media only screen and (max-width : 500px) {
+  .content-item-img img {
+    width: 42%;
+    border-radius: 45px;
+  }
+}
+
+.content-para {
+  color: #FFF;
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+  font-size: 34px;
+  font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
+  margin-right: 20px;
+  margin-left: -80px;
+}
+
+@media only screen and (max-width : 500px) {
+  .content-para {
+    color: #FFF;
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
+
+    margin-left: 80px;
+  }
+}
+
+@media(max-width:769px) {
+  .content-row {
+    flex-direction: column;
+  }
+
+  .content-item {
+    width: 90%;
+  }
+
+  .content-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 1vw);
+  }
+}
+
+.tre {
+  float: left;
+  /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0;
+  /* Отступы вокруг картинки */
+}
+/*------------------*/
 
 .news {
-  font-size: 180px;
+  font-size: 100px;
   font-weight: 400;
   text-align: center;
   opacity: 0;
@@ -349,22 +437,69 @@ ul {
 
 
 
+/* -----------Подвал-----------*/
+.nav-list2 {
+  padding-top: 389px;
+  display: flex;
+  column-gap: 25px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@media only screen and (max-width : 500px) {
+  .nav-list2 {
+    padding-top: 100px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .h123 {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.footer {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer__text {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width : 500px) {
+  .footer__text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 
 .to-top {
-    bottom: -75px;
-    width: 50px;
-    height: 50px;
-    right: 25px;
-    position: fixed;
-    opacity: 0;
-    z-index: 9999;
-    transition: all 0.5s;
-    pointer-events: none;
-  }
-  
-  .to-top.active {
-    bottom: 25px;
-    opacity: 0.4;
-    pointer-events: auto;
-    z-index: 9999;
-  }
+  bottom: -75px;
+  width: 50px;
+  height: 50px;
+  right: 25px;
+  position: fixed;
+  opacity: 0;
+  z-index: 9999;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.to-top.active {
+  bottom: 25px;
+  opacity: 0.4;
+  pointer-events: auto;
+  z-index: 9999;
+}
+/* -----------Подвал-----------*/
