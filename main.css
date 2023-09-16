@@ -246,6 +246,17 @@ ul {
 }
 
 
+@media only screen and (min-width : 500px) 
+{
+  .iii {
+    display: none;
+  }
+  
+  .pp {
+    display: none;
+}
+}
+
 @media only screen and (max-width : 500px) {
   .centr-text {
     color: #FF8500;
@@ -256,8 +267,24 @@ ul {
   }
 }
 
+.iii {
+  float: left;
+  margin-left: -50px;
+  width: 60%;
+  border-radius: 25px;
+  padding-right: 15px;
+}
 
-
+.pp {
+  margin-top: 0; /* убрать отступ сверху */
+  margin-right: -50px;
+  margin-left: -50px;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
+text-align: justify;
+}
 
 
 
