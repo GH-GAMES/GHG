@@ -64,6 +64,54 @@ ul {
   margin-top: 14px;
 }
 
+@media only screen and (max-width : 1120px) {
+  .logo {
+    color: #ffffff;
+    font-size: 21.6px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 1020px) {
+  .logo {
+    color: #ffffff;
+    font-size: 19.2px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 920px) {
+  .logo {
+    color: #ffffff;
+    font-size: 16.8px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .logo {
+    color: #ffffff;
+    font-size: 14.4px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 21px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+}
+
 @media only screen and (max-width : 567px) {
   .logo {
     color: #ffffff;
@@ -84,6 +132,42 @@ ul {
   font-size: 24px;
 }
 
+@media only screen and (max-width : 1120px) {
+  .nav-list {
+    display: flex;
+    column-gap: 25px;
+    font-weight: 400;
+    font-size: 21.6px;
+  }
+}
+
+@media only screen and (max-width : 1020px) {
+  .nav-list {
+    display: flex;
+    column-gap: 25px;
+    font-weight: 400;
+    font-size: 19.2px;
+  }
+}
+
+@media only screen and (max-width : 920px) {
+  .nav-list {
+    display: flex;
+    column-gap: 25px;
+    font-weight: 400;
+    font-size: 16.8px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .nav-list {
+    display: flex;
+    column-gap: 25px;
+    font-weight: 400;
+    font-size: 14.4px;
+  }
+}
+
 @media only screen and (max-width : 567px) {
   .nav-list {
     display: flex;
@@ -95,6 +179,30 @@ ul {
 
 .nav-item {
   margin-top: 14px;
+}
+
+@media only screen and (max-width : 1120px) {
+  .nav-item {
+    margin-top: 21px;
+  }
+}
+
+@media only screen and (max-width : 1020px) {
+  .nav-item {
+    margin-top: 21px;
+  }
+}
+
+@media only screen and (max-width : 920px) {
+  .nav-item {
+    margin-top: 21px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .nav-item {
+    margin-top: 21px;
+  }
 }
 
 @media only screen and (max-width : 567px) {
@@ -110,32 +218,76 @@ ul {
 
 }
 
-.img-logo {
+.imgg-logo {
   display: block;
   width: 114px;
   height: 114px;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 12px;
 }
 
-.img-logo img {
+.imgg-logo img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
+@media only screen and (max-width : 1120px) {
+  .imgg-logo {
+    display: block;
+    width: 102.6px;
+    height: 102.6px;
+    margin-top: 12px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 1020px) {
+  .imgg-logo {
+    display: block;
+    width: 91.2px;
+    height: 91.2px;
+    margin-top: 12px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 920px) {
+  .imgg-logo {
+    display: block;
+    width: 79.8px;
+    height: 79.8px;
+    margin-top: 12px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .imgg-logo {
+    display: block;
+    width: 68.4px;
+    height: 68.457px;
+    margin-top: 12px;
+    margin-left: -20px;
+  }
+}
+
 @media only screen and (max-width : 567px) {
-  .img-logo {
+  .imgg-logo {
     display: block;
     width: 57px;
     height: 57px;
     margin-top: 12px;
-    margin-left: 20px;
   }
 }
 
-/*-----------Header-----------*/
+.imgl {
+  max-width: 1980px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 70%;
+}
 
+/*-----------Header-----------*/
 
 
 
@@ -464,21 +616,6 @@ ul {
   line-height: normal;
 }
 
-.news {
-  font-size: 180px;
-  font-weight: 400;
-  text-align: center;
-  opacity: 0;
-}
-
-@media only screen and (max-width : 567px) {
-  .news {
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-    opacity: 0;
-  }
-}
 
 .nav-list2 {
   display: flex;
@@ -512,7 +649,6 @@ ul {
   top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
 #slider {
@@ -551,11 +687,14 @@ article img {
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked~#controls label:nth-child(5),
+#switch1:checked~#controls label:nth-child(8),
 #switch2:checked~#controls label:nth-child(1),
 #switch3:checked~#controls label:nth-child(2),
 #switch4:checked~#controls label:nth-child(3),
-#switch5:checked~#controls label:nth-child(4) {
+#switch5:checked~#controls label:nth-child(4),
+#switch6:checked~#controls label:nth-child(5),
+#switch7:checked~#controls label:nth-child(6),
+#switch8:checked~#controls label:nth-child(7) {
   background: url('BTN_LEFT_ARROW.png') no-repeat;
   /*заливка фона картинкой без повторений*/
   float: left;
@@ -571,7 +710,10 @@ article img {
 #switch2:checked~#controls label:nth-child(3),
 #switch3:checked~#controls label:nth-child(4),
 #switch4:checked~#controls label:nth-child(5),
-#switch5:checked~#controls label:nth-child(1) {
+#switch5:checked~#controls label:nth-child(6),
+#switch6:checked~#controls label:nth-child(7),
+#switch7:checked~#controls label:nth-child(8), 
+#switch8:checked~#controls label:nth-child(1) {
   background: url('BTN_RIGHT_ARROW.png') no-repeat;
   /*заливка фона картинкой без повторений*/
   float: right;
@@ -584,11 +726,14 @@ article img {
 
 @media only screen and (max-width : 567px) {
 
-  #switch1:checked~#controls label:nth-child(5),
+  #switch1:checked~#controls label:nth-child(8),
   #switch2:checked~#controls label:nth-child(1),
   #switch3:checked~#controls label:nth-child(2),
   #switch4:checked~#controls label:nth-child(3),
-  #switch5:checked~#controls label:nth-child(4) {
+  #switch5:checked~#controls label:nth-child(4),
+  #switch6:checked~#controls label:nth-child(5),
+  #switch7:checked~#controls label:nth-child(6),
+  #switch8:checked~#controls label:nth-child(7) {
     background: url('BTN_LEFT_ARROW.png') no-repeat;
     /*заливка фона картинкой без повторений*/
     float: left;
@@ -607,7 +752,10 @@ article img {
   #switch2:checked~#controls label:nth-child(3),
   #switch3:checked~#controls label:nth-child(4),
   #switch4:checked~#controls label:nth-child(5),
-  #switch5:checked~#controls label:nth-child(1) {
+  #switch5:checked~#controls label:nth-child(6),
+  #switch6:checked~#controls label:nth-child(7),
+  #switch7:checked~#controls label:nth-child(8), 
+  #switch8:checked~#controls label:nth-child(1) {
     background: url('BTN_RIGHT_ARROW.png') no-repeat;
     /*заливка фона картинкой без повторений*/
     float: right;
@@ -649,6 +797,15 @@ a {
 
 #switch5:checked~#slides .image {
   margin-left: -400%;
+}
+#switch6:checked~#slides .image {
+  margin-left: -500%;
+}
+#switch7:checked~#slides .image {
+  margin-left: -600%;
+}
+#switch8:checked~#slides .image {
+  margin-left: -700%;
 }
 
 #controls {
@@ -700,7 +857,10 @@ a {
 #switch2:checked~#active label:nth-child(2),
 #switch3:checked~#active label:nth-child(3),
 #switch4:checked~#active label:nth-child(4),
-#switch5:checked~#active label:nth-child(5) {
+#switch5:checked~#active label:nth-child(5),
+#switch6:checked~#active label:nth-child(6),
+#switch7:checked~#active label:nth-child(7),
+#switch8:checked~#active label:nth-child(8) {
   background: #fc6500;
   border-color: #fc6500 !important;
 }

@@ -1,8 +1,10 @@
 var counter = 1;
-  setInterval(function(){
+var tmp = 'switch';
+setInterval(function () {
   document.getElementById('switch' + counter).checked = true;
   counter++;
-  if(counter > 4){
-  counter = 1;
+  if (counter > 4) {
+    counter = 1;
   }
-  }, 5000);
+}, 5000);
+
