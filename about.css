@@ -300,14 +300,54 @@ ul {
 
 
 /*-----------Main-----------*/
-.mainContainer {
+.mainContainer { /*100*/
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
   width: 65%;
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 1120px) { /*90*/
+    .mainContainer {
+        max-width: 1400px;
+        padding: 0 10px;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 1020px) { /*80*/
+    .mainContainer {
+        max-width: 1400px;
+        padding: 0 10px;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 920px) { /*70*/
+    .mainContainer {
+        max-width: 1400px;
+        padding: 0 10px;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 767px) { /*60*/
+    .mainContainer {
+        max-width: 1400px;
+        padding: 0 10px;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 567px) { /*50*/
   .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
@@ -325,6 +365,54 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (max-width : 1120px) {
+    .centr-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .centr-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .centr-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .centr-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 @media only screen and (max-width : 567px) {
@@ -582,6 +670,63 @@ ul {
   margin-right: auto;
 }
 
+@media only screen and (max-width : 1120px) {
+
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6,
+    .line7,
+    .line8,
+    .line9,
+    .line5,
+    .line10,
+    .line11,
+    .line12 {
+        height: 9px;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6,
+    .line7,
+    .line8,
+    .line9,
+    .line5,
+    .line10,
+    .line11,
+    .line12 {
+        height: 8px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6,
+    .line7,
+    .line8,
+    .line9,
+    .line5,
+    .line10,
+    .line11,
+    .line12 {
+        height: 7px;
+    }
+}
+
 @media only screen and (max-width : 567px) {
 
   .line,
@@ -634,6 +779,54 @@ ul {
   line-height: normal;
 }
 
+@media only screen and (max-width : 1120px) {
+    .centr-text2 {
+        padding-top: 15px;
+        color: #FFF;
+        text-align: center;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .centr-text2 {
+        padding-top: 15px;
+        color: #FFF;
+        text-align: center;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .centr-text2 {
+        padding-top: 15px;
+        color: #FFF;
+        text-align: center;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .centr-text2 {
+        padding-top: 15px;
+        color: #FFF;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
 @media only screen and (max-width : 567px) {
   .centr-text2 {
     padding-top: 15px;
@@ -656,6 +849,62 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (max-width : 1120px) {
+    .centr-text3 {
+        padding-top: 30px;
+        padding-bottom: 32px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .centr-text3 {
+        padding-top: 30px;
+        padding-bottom: 32px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .centr-text3 {
+        padding-top: 30px;
+        padding-bottom: 32px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .centr-text3 {
+        padding-top: 30px;
+        padding-bottom: 32px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 @media only screen and (max-width : 567px) {
@@ -681,6 +930,50 @@ ul {
   line-height: normal;
 }
 
+@media only screen and (max-width : 1120px) {
+    .textGH {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .textGH {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .textGH {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .textGH {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
 @media only screen and (max-width : 567px) {
   .textGH {
     color: #FFF;
@@ -700,6 +993,54 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (max-width : 1120px) {
+    .Developers {
+        padding-top: 60px;
+        color: #FFF;
+        text-align: left;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .Developers {
+        padding-top: 60px;
+        color: #FFF;
+        text-align: left;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .Developers {
+        padding-top: 60px;
+        color: #FFF;
+        text-align: left;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .Developers {
+        padding-top: 60px;
+        color: #FFF;
+        text-align: left;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 @media only screen and (max-width : 567px) {
@@ -731,6 +1072,34 @@ ul {
   max-height: 400px;
 }
 
+@media only screen and (max-width : 1120px) {
+    .imgMember {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .imgMember {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .imgMember {
+        max-width: 90px;
+        max-height: 90px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .imgMember {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
 @media only screen and (max-width : 567px) {
   .imgMember {
     max-width: 10px;
@@ -755,6 +1124,42 @@ ul {
   margin-right: 50px;
 }
 
+@media only screen and (max-width : 1120px) {
+    .content-item-img img {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .content-item-img img {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .content-item-img img {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .content-item-img img {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 30px;
+        margin-right: 30px;
+    }
+}
+
 @media only screen and (max-width : 567px) {
   .content-item-img img {
     max-width: 120px;
@@ -771,6 +1176,50 @@ ul {
   line-height: normal;
   text-align: justify;
   font-size: 64px;
+}
+
+@media only screen and (max-width : 1120px) {
+    .content-para {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 57px;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .content-para {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 51px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .content-para {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .content-para {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width : 567px) {
@@ -793,6 +1242,50 @@ ul {
   font-size: 40px;
 }
 
+@media only screen and (max-width : 1120px) {
+    .content-para2 {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .content-para2 {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .content-para2 {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .content-para2 {
+        color: #FFF;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        font-size: 24px;
+    }
+}
+
 @media only screen and (max-width : 567px) {
   .content-para2 {
     color: #FFF;
@@ -811,6 +1304,50 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (max-width : 1120px) {
+    .nav-item3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .nav-item3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .nav-item3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .nav-item3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 @media only screen and (max-width : 567px) {

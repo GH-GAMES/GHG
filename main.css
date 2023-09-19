@@ -1,4 +1,5 @@
 @import 'front.css';
+@import url('main.css');
 
 .body {
   margin: 0;
@@ -516,7 +517,8 @@ ul {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 180px;
+  margin-top: 15px;
+  margin-bottom: 500px;
 }
 
 .line,
