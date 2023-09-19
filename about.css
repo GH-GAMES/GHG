@@ -306,7 +306,15 @@ ul {
   margin: 0 auto;
   width: 65%;
 }
-
+@media only screen and (max-width : 767px) {
+  .mainContainer {
+    max-width: 1400px;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 @media only screen and (max-width : 567px) {
   .mainContainer {
     max-width: 1400px;
@@ -326,13 +334,23 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-
+@media only screen and (max-width : 767px) {
+  .centr-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 @media only screen and (max-width : 567px) {
   .centr-text {
     color: #FFF;
     text-align: center;
     font-family: Bebas Neue;
-    font-size: 50px;
+    font-size: 75px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
