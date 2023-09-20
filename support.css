@@ -35,6 +35,7 @@ a {
   padding: 0 30px;
   margin: 0 auto;
   width: 70%;
+  list-style-type:  none;
 }
 
 .header{
