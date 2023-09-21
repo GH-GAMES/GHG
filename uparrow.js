@@ -7,3 +7,4 @@ window.addEventListener("scroll", () => {
         ToTop.classList.remove("active");
     }
 })
+
