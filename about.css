@@ -306,7 +306,7 @@ ul {
   margin: 0 auto;
   width: 65%;
 }
-<<<<<<< HEAD
+
 @media only screen and (max-width : 767px) {
   .mainContainer {
     max-width: 1400px;
@@ -316,8 +316,6 @@ ul {
     width: 90%;
   }
 }
-@media only screen and (max-width : 567px) {
-=======
 
 @media only screen and (max-width : 1120px) { /*90*/
     .mainContainer {
@@ -360,7 +358,6 @@ ul {
 }
 
 @media only screen and (max-width : 567px) { /*50*/
->>>>>>> d77444a70107052fdf90e732da688ae19c58d77c
   .mainContainer {
     max-width: 1400px;
     padding: 0 10px;
@@ -369,6 +366,7 @@ ul {
     width: 90%;
   }
 }
+
 
 .centr-text {
   color: #FFF;
@@ -379,7 +377,7 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-<<<<<<< HEAD
+
 @media only screen and (max-width : 767px) {
   .centr-text {
     color: #FFF;
@@ -391,7 +389,7 @@ ul {
     line-height: normal;
   }
 }
-=======
+
 
 @media only screen and (max-width : 1120px) {
     .centr-text {
@@ -441,7 +439,7 @@ ul {
     }
 }
 
->>>>>>> d77444a70107052fdf90e732da688ae19c58d77c
+
 @media only screen and (max-width : 567px) {
   .centr-text {
     color: #FFF;
@@ -1155,8 +1153,8 @@ ul {
     .content-item-img img {
         max-width: 120px;
         max-height: 120px;
-        border-radius: 45px;
-        margin-right: 45px;
+        border-radius: 40px;
+        margin-right: 40px;
     }
 }
 
