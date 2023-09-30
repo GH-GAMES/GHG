@@ -724,7 +724,7 @@ ul {
 }
 
 .line5 {
-  max-width: 1510px;
+  max-width: 1360px;
   border: none;
   height: 10px;
   background-color: #000;
@@ -1115,7 +1115,7 @@ ul {
 /* Конкретный слайдер */
 .slider {
   position: relative;
-  margin: 0px 10px;
+  padding: 0px 60px;
 }
 
 .slider .slick-arrow {
