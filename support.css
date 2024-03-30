@@ -903,7 +903,7 @@ line5 {
 .img__price {
   position: absolute;
   right: 0;
-  bottom: -40%;
+  bottom: -70%;
 }
 
 @media only screen and (max-width : 1120px) {
@@ -955,7 +955,7 @@ line5 {
 .img__price4 {
   position: absolute;
   right: 0;
-  bottom: -25%;
+  bottom: -55%;
 }
 
 @media only screen and (max-width : 1120px) {

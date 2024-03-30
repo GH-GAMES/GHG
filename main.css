@@ -181,6 +181,19 @@ ul {
 .nav-item {
   margin-top: 14px;
 }
+.change-lang{
+  margin-top: 14px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  column-gap: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  border: none;
+}
+select:active, select:focus{
+  outline:none
+}
 
 @media only screen and (max-width : 1120px) {
   .nav-item {
