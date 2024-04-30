@@ -41,6 +41,7 @@ ul {
   padding: 0 30px;
   margin: 0 auto;
   width: 70%;
+  list-style-type: none;
 }
 
 .header {
@@ -304,12 +305,12 @@ ul {
   max-width: 1980px;
   padding: 0 30px;
   margin: 0 auto;
-  width: 65%;
+  width: 75%;
 }
 
 @media only screen and (max-width : 767px) {
   .mainContainer {
-    max-width: 1400px;
+    max-width: 1980px;
     padding: 0 10px;
     position: relative;
     margin: 0 auto;

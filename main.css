@@ -42,6 +42,7 @@ ul {
   padding: 0 30px;
   margin: 0 auto;
   width: 70%;
+  list-style-type: none;
 }
 
 .header {
@@ -181,7 +182,7 @@ ul {
 .nav-item {
   margin-top: 14px;
 }
-.change-lang{
+/*.change-lang{
   margin-top: 14px;
   background-color: #000;
   color: white;
@@ -194,6 +195,7 @@ ul {
 select:active, select:focus{
   outline:none
 }
+*/
 
 @media only screen and (max-width : 1120px) {
   .nav-item {
@@ -316,14 +318,13 @@ select:active, select:focus{
 .mainContainer {
   max-width: 1980px;
   padding: 0 30px;
-  position: relative;
   margin: 0 auto;
   width: 75%;
 }
 
 @media only screen and (max-width : 1120px) {
   .mainContainer {
-    max-width: 1980px;
+    max-width: 1400px;
     padding: 0 10px;
     text-align: center;
     margin: 0 auto;
@@ -333,7 +334,7 @@ select:active, select:focus{
 
 @media only screen and (max-width : 1020px) {
   .mainContainer {
-    max-width: 1980px;
+    max-width: 1400px;
     padding: 0 10px;
     text-align: center;
     margin: 0 auto;
@@ -343,7 +344,7 @@ select:active, select:focus{
 
 @media only screen and (max-width : 920px) {
   .mainContainer {
-    max-width: 1980px;
+    max-width: 1400px;
     padding: 0 10px;
     text-align: center;
     margin: 0 auto;
@@ -353,7 +354,7 @@ select:active, select:focus{
 
 @media only screen and (max-width : 767px) {
   .mainContainer {
-    max-width: 1980px;
+    max-width: 1400px;
     padding: 0 10px;
     text-align: center;
     margin: 0 auto;
@@ -385,8 +386,9 @@ select:active, select:focus{
 }
 
 .content-item {
-  width: 80%;
+  width: 50%;
   min-width: 290px;
+  margin-left: 20px;
 }
 
 .content-item-img {
@@ -395,7 +397,7 @@ select:active, select:focus{
 
 @media only screen and (max-width : 1120px) {
   .content-item-img {
-    margin-left: -65px;
+    margin-left: -650px;
   }
 }
 
