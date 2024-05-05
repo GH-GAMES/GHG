@@ -747,7 +747,15 @@ select:active, select:focus{
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 15px;
+  margin-bottom: 15px;
+}
+.steamVidget{
   margin-bottom: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .line,
