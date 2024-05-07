@@ -371,12 +371,12 @@ ul {
 }
 
 .thumb-wrap iframe {
-  margin-left: 5%;
+  margin-left: 5.5%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 89%;
+  height: 89%;
   border-width: 0;
   outline-width: 0;
 }
