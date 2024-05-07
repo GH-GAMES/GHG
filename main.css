@@ -991,6 +991,7 @@ select:active, select:focus{
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 20px;
+  z-index: 1000;
 }
 
 @media only screen and (max-width : 1120px) {
@@ -1345,10 +1346,12 @@ select:active, select:focus{
 
 
 /* -----------Подвал-----------*/
-
+.nav-item2{
+  z-index: 1000
+}
 .footer {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1407,6 +1410,7 @@ select:active, select:focus{
   max-height: 868px;
   bottom: 60%;
   right: 0;
+  z-index: 10
 }
 
 @media only screen and (max-width : 1120px) {
