@@ -1,5 +1,4 @@
 @import 'front.css';
-@import url('main.css');
 
 .body {
   margin: 0;
@@ -182,20 +181,6 @@ ul {
 .nav-item {
   margin-top: 14px;
 }
-/*.change-lang{
-  margin-top: 14px;
-  background-color: #000;
-  color: white;
-  display: flex;
-  column-gap: 50px;
-  font-weight: 400;
-  font-size: 24px;
-  border: none;
-}
-select:active, select:focus{
-  outline:none
-}
-*/
 
 @media only screen and (max-width : 1120px) {
   .nav-item {
@@ -234,21 +219,21 @@ select:active, select:focus{
 
 }
 
-.imgg-logo {
+.img-logo {
   display: block;
   width: 114px;
   height: 114px;
   margin-top: 12px;
 }
 
-.imgg-logo img {
+.img-logo img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
 @media only screen and (max-width : 1120px) {
-  .imgg-logo {
+  .img-logo {
     display: block;
     width: 102.6px;
     height: 102.6px;
@@ -258,7 +243,7 @@ select:active, select:focus{
 }
 
 @media only screen and (max-width : 1020px) {
-  .imgg-logo {
+  .img-logo {
     display: block;
     width: 91.2px;
     height: 91.2px;
@@ -268,7 +253,7 @@ select:active, select:focus{
 }
 
 @media only screen and (max-width : 920px) {
-  .imgg-logo {
+  .img-logo {
     display: block;
     width: 79.8px;
     height: 79.8px;
@@ -278,7 +263,7 @@ select:active, select:focus{
 }
 
 @media only screen and (max-width : 767px) {
-  .imgg-logo {
+  .img-logo {
     display: block;
     width: 68.4px;
     height: 68.457px;
@@ -288,7 +273,7 @@ select:active, select:focus{
 }
 
 @media only screen and (max-width : 567px) {
-  .imgg-logo {
+  .img-logo {
     display: block;
     width: 57px;
     height: 57px;
@@ -375,97 +360,31 @@ select:active, select:focus{
 
 
 /*---------------------*/
-.content-row {
-  max-width: 1980px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
+.thumb-wrap {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
 }
 
-.content-item {
-  width: 50%;
-  min-width: 290px;
-  margin-left: 20px;
+.thumb-wrap iframe {
+  margin-left: 5.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89%;
+  height: 89%;
+  border-width: 0;
+  outline-width: 0;
 }
 
-.content-item-img {
-  padding-left: 20px;
-}
-
-@media only screen and (max-width : 1120px) {
-  .content-item-img {
-    margin-left: -650px;
-  }
-}
-
-@media only screen and (max-width : 1020px) {
-  .content-item-img {
-    margin-left: -65px;
-  }
-}
-
-@media only screen and (max-width : 920px) {
-  .content-item-img {
-    margin-left: -65px;
-  }
-}
-
-@media only screen and (max-width : 767px) {
-  .content-item-img {
-    margin-left: -65px;
-  }
-}
-
-@media only screen and (max-width : 567px) {
-  .content-item-img {
-    margin-left: -65px;
-  }
-}
-
-.content-item-img img {
-  width: 85%;
-  border-radius: 90px;
-}
-
-@media only screen and (max-width : 1120px) {
-  .content-item-img img {
-    width: 42%;
-    border-radius: 45px;
-  }
-}
-
-@media only screen and (max-width : 1020px) {
-  .content-item-img img {
-    width: 42%;
-    border-radius: 45px;
-  }
-}
-
-@media only screen and (max-width : 920px) {
-  .content-item-img img {
-    width: 42%;
-    border-radius: 45px;
-  }
-}
-
-@media only screen and (max-width : 767px) {
-  .content-item-img img {
-    width: 42%;
-    border-radius: 45px;
-  }
-}
-
-@media only screen and (max-width : 567px) {
-  .content-item-img img {
-    width: 42%;
-    border-radius: 45px;
-  }
-}
 
 .content-para {
+  padding-left: 20px;
+  padding-right: 20px;
   color: #FFF;
   margin-top: 8px;
   font-weight: 400;
@@ -473,12 +392,12 @@ select:active, select:focus{
   text-align: justify;
   font-size: 34px;
   font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-  margin-right: 20px;
-  margin-left: -80px;
 }
 
 @media only screen and (max-width : 1120px) {
   .content-para {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFF;
     margin-top: 8px;
     font-weight: 400;
@@ -486,13 +405,13 @@ select:active, select:focus{
     text-align: justify;
     font-size: 17px;
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-
-    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width : 1020px) {
   .content-para {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFF;
     margin-top: 8px;
     font-weight: 400;
@@ -500,13 +419,13 @@ select:active, select:focus{
     text-align: justify;
     font-size: 17px;
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-
-    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width : 920px) {
   .content-para {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFF;
     margin-top: 8px;
     font-weight: 400;
@@ -514,13 +433,13 @@ select:active, select:focus{
     text-align: justify;
     font-size: 17px;
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-
-    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width : 767px) {
   .content-para {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFF;
     margin-top: 8px;
     font-weight: 400;
@@ -528,12 +447,13 @@ select:active, select:focus{
     text-align: justify;
     font-size: 17px;
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width : 567px) {
   .content-para {
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFF;
     margin-top: 8px;
     font-weight: 400;
@@ -541,76 +461,8 @@ select:active, select:focus{
     text-align: justify;
     font-size: 17px;
     font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-
-    margin-left: 80px;
   }
 }
-
-@media(max-width:1120px) {
-  .content-row {
-    display: none;
-  }
-}
-
-@media(max-width:1020px) {
-  .content-row {
-    display: none;
-  }
-}
-
-@media(max-width:920px) {
-  .content-row {
-    display: none;
-  }
-}
-
-@media(max-width:767px) {
-  .content-row {
-    display: none;
-  }
-}
-
-@media(max-width:567px) {
-  .content-row {
-    display: none;
-  }
-}
-
-
-@media only screen and (min-width : 1120px) {
-  .iii {
-    display: none;
-  }
-
-  .pp {
-    display: none;
-  }
-}
-
-
-
-
-.iii {
-  float: left;
-  margin-left: -50px;
-  width: 60%;
-  border-radius: 25px;
-  padding-right: 15px;
-}
-
-.pp {
-  margin-top: 0;
-  /* убрать отступ сверху */
-  margin-right: -50px;
-  margin-left: -50px;
-  color: #FFF;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: 'Fanklin Gothic Medium', 'Arial Narrow', Arial, sans-serifr;
-  text-align: justify;
-}
-
-
 
 .centr-text {
   color: #FF8500;
@@ -721,6 +573,7 @@ select:active, select:focus{
   background-color: #000;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -991,6 +844,7 @@ select:active, select:focus{
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 20px;
+  z-index: 1000;
 }
 
 @media only screen and (max-width : 1120px) {
@@ -1345,10 +1199,12 @@ select:active, select:focus{
 
 
 /* -----------Подвал-----------*/
-
+.nav-item2{
+  z-index: 1000
+}
 .footer {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1407,6 +1263,7 @@ select:active, select:focus{
   max-height: 868px;
   bottom: 60%;
   right: 0;
+  z-index: 10
 }
 
 @media only screen and (max-width : 1120px) {
