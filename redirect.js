@@ -1,5 +1,5 @@
 var f = document.title;
-var u = window.location.pathname.replace(/.*GHG\//,'');
+var u = window.location.pathname.replace(/.*ghgames.online\//,'');
 var au = document.querySelector("a[href='"+u+"']");
 var af = document.querySelector("a[href='"+f+"']");
 au.className += ' tu';
