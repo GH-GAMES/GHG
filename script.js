@@ -14,7 +14,7 @@ $(document).ready(function () {
 		pauseOnDotsHover:true,*/
 	});
 });
-
+//-----------------------------------------------------------------------------------------------------------
 const ToTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 		ToTop.classList.remove("active");
 	}
 })
-
+//------------------------------------------------------------------------------------------------------------
 var f = document.title;
 var u = window.location.pathname.replace(/.*GHG\//, '');
 var au = document.querySelector("a[href='" + u + "']");
@@ -43,3 +43,4 @@ if (p == 'https:') {
 	m.className += ' ok';
 	m.innerHTML = '<i class="fa fa-lock" aria-hidden="true"></i> HTTPS';
 }
+//-----------------------------------------------------------------------------------------------------------
