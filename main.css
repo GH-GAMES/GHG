@@ -602,7 +602,8 @@ ul {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.steamVidget{
+
+.steamVidget {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -611,7 +612,8 @@ ul {
   margin-right: auto;
   margin-bottom: 50px;
 }
-.news{
+
+.news {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1013,6 +1015,7 @@ ul {
   width: 30px;
   height: 60px;
 }
+
 @media only screen and (max-width : 1120px) {
   .slider .slick-arrow {
     position: absolute;
@@ -1024,6 +1027,7 @@ ul {
     height: 54px;
   }
 }
+
 @media only screen and (max-width : 1020px) {
   .slider .slick-arrow {
     position: absolute;
@@ -1035,6 +1039,7 @@ ul {
     height: 48px;
   }
 }
+
 @media only screen and (max-width : 920px) {
   .slider .slick-arrow {
     position: absolute;
@@ -1046,6 +1051,7 @@ ul {
     height: 42px;
   }
 }
+
 @media only screen and (max-width : 767px) {
   .slider .slick-arrow {
     position: absolute;
@@ -1057,6 +1063,7 @@ ul {
     height: 36px;
   }
 }
+
 @media only screen and (max-width : 567px) {
   .slider .slick-arrow {
     position: absolute;
@@ -1068,6 +1075,7 @@ ul {
     height: 30px;
   }
 }
+
 .slider .slick-arrow.slick-prev {
   left: 0;
   background: url('sl-arrow_l.svg') 0 0 / 90% no-repeat;
@@ -1087,6 +1095,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 @media only screen and (max-width : 567px) {
   .slider .slick-dots {
     position: relative;
@@ -1101,30 +1110,35 @@ ul {
   list-style: none;
   margin: 0px 10px;
 }
+
 @media only screen and (max-width : 1120px) {
   .slider .slick-dots li {
     list-style: none;
     margin: 0px 9px;
   }
 }
+
 @media only screen and (max-width : 1020px) {
   .slider .slick-dots li {
     list-style: none;
     margin: 0px 8px;
   }
 }
+
 @media only screen and (max-width : 920px) {
   .slider .slick-dots li {
     list-style: none;
     margin: 0px 7px;
   }
 }
+
 @media only screen and (max-width : 767px) {
   .slider .slick-dots li {
     list-style: none;
     margin: 0px 6px;
   }
 }
+
 @media only screen and (max-width : 567px) {
   .slider .slick-dots li {
     list-style: none;
@@ -1139,6 +1153,7 @@ ul {
   background: #4d4c4c;
   border-radius: 5px;
 }
+
 @media only screen and (max-width : 1120px) {
   .slider .slick-dots button {
     font-size: 0;
@@ -1148,6 +1163,7 @@ ul {
     border-radius: 5px;
   }
 }
+
 @media only screen and (max-width : 1020px) {
   .slider .slick-dots button {
     font-size: 0;
@@ -1157,6 +1173,7 @@ ul {
     border-radius: 5px;
   }
 }
+
 @media only screen and (max-width : 920px) {
   .slider .slick-dots button {
     font-size: 0;
@@ -1166,6 +1183,7 @@ ul {
     border-radius: 5px;
   }
 }
+
 @media only screen and (max-width : 767px) {
   .slider .slick-dots button {
     font-size: 0;
@@ -1175,6 +1193,7 @@ ul {
     border-radius: 5px;
   }
 }
+
 @media only screen and (max-width : 567px) {
   .slider .slick-dots button {
     font-size: 0;
@@ -1189,19 +1208,20 @@ ul {
   background-color: #fc6500;
 }
 
-.slider__item {}
+/*.slider__item {}
 
 .slider__item img {}
 
-.slider__item.slick-center {}
+.slider__item.slick-center {}*/
 
 /*-----------Карусель-----------*/
 
 
 /* -----------Подвал-----------*/
-.nav-item2{
+.nav-item2 {
   z-index: 1000
 }
+
 .footer {
   position: relative;
   z-index: 10;
