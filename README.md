@@ -1,1 +1,1 @@
-# Website GH Games
+Gh Games Team
