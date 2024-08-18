@@ -1363,3 +1363,33 @@ img {
   pointer-events: auto;
   z-index: 9999;
 }
+/*----------------------------------------------------------------*/
+@media only screen and (max-width : 1120px) {
+  .steamVidget {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 1020px) {
+  .steamVidget {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 920px) {
+  .steamVidget {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .steamVidget {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 567px) {
+  .steamVidget {
+    display: none;
+  }
+}
