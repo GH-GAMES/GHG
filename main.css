@@ -1394,32 +1394,14 @@ img {
   }
 }
 /*------------------*/
-@media only screen and (max-width : 1120px) {
-  .img__footer {
-    display: none;
-  }
-}
-
-@media only screen and (max-width : 1020px) {
-  .img__footer {
-    display: none;
-  }
-}
-
-@media only screen and (max-width : 920px) {
-  .img__footer {
-    display: none;
-  }
-}
-
 @media only screen and (max-width : 767px) {
-  .img__footer {
+  .imgFooter {
     display: none;
   }
 }
 
 @media only screen and (max-width : 567px) {
-  .img__footer {
+  .imgFooter {
     display: none;
   }
 }
