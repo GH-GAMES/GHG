@@ -1,141 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GH Games</title>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH Games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Resources/favicon.ico" />
+    <meta name="description" content="GH Games is a game development studio. Learn more about our game RC Car Maniacs and stay up to date with the latest news.">
+	<meta name="keywords" content="gh games, rc car maniacs, games, game development, racing, simulator">
 </head>
+<body>
 
-<body class="body">
-
-  <!--UP ARROW-->
-  <a href="#" class="to-top">
-    <i class="fas fa-chevron-up"><img src="Image\SQUARE_ARROW_SCROLL_WHITE.png" alt=""></i>
-  </a>
-
-  <header class="header">
-    <div class="container">
-      <div class="header-nav">
-        <a href="main" class="logo">GH Games</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="about" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="support" class="nav-link">Support us</a></li>
-            <li class="nav-item"><a href="contact" class="nav-link">Contact us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <div class="imgl">
-    <a class="img-logo" href="about"><img class="imgLogo" src="Image\GHG_AVATAR_ROUND.png" alt=""></a>
-  </div>
-
-  <main class="main">
-    <div class="mainContainer">
-      <h1 class="centr-text">RC: Car Maniacs</h1>
-      <hr class="line">
-      <h1 class="centr-text-Botton">Game Screenshots / Video</h1>
-      <hr class="line2">
-
-
-      <div class="slider">
-        <div class="slider__item filter">
-          <img src="Image\karusel\IMAGE_1.png" alt="">
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="GH Games Home">
+                <img src="images/Resources/GHG_Header.png" alt="GH Games Logo" width="221" height="40">
+            </a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list">&#9776;</button>
+                <ul class="nav-list" id="main-menu-list" role="menu">
+                    <li role="none"><a href="index.html" role="menuitem">GHG</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">ABOUT</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_2.png" alt="">
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                 <img src="images/Resources/DSC.png" alt="DREAM SPEED CARS" class="hero-title-image">
+                <img src="images/Resources/DSC2.png" alt="Follow our social networks to read the latest news about the project!" class="hero-subtitle-image">
+                <a href="#game-section" class="scroll-down-link" aria-label="Прокрутить к информации об игре">&#9660;</a>
+            </div>
+        </section>
+
+        <section id="game-section" class="game-info container py-4 animate-on-scroll">
+             <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" class="game-card" title="Перейти на страницу RC Car Maniacs в Steam">
+                <div class="game-card-image" role="img" aria-label="RC Car Maniacs game preview"></div>
+                <div class="game-card-content">
+                    <h2>RC: CAR MANIACS</h2>
+                    <p>RC:CM is an exciting arcade simulator of radio–controlled cars, which will allow you to plunge into the world of children's fantasies, driving radio-controlled cars: rally, drift, high-speed and other types of cars! Race with your friends!</p>
+                </div>
+                <div class="game-card-steam">
+                    <span>STEAM</span> <img src="images/Icons/steam_ico.png" alt="Steam Logo">
+                </div>
+            </a>
+        </section>
+
+        <section class="gameplay container py-4">
+            <div class="gameplay-card-wrapper animate-on-scroll"> <h2 class="uppercase">Gameplay</h2>
+                <div class="swiper gameplay-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gameplay-slide-grid">
+                                <div class="gameplay-item">
+                                    <div class="gameplay-image gameplay-image-sound" role="img" aria-label="Gameplay sound feature illustration"></div>
+                                    <div class="gameplay-content">
+                                        <h3>Sound</h3>
+                                        <p>Detailed sounds of each track surface. Realistic sound environment. The soundtracks written for the game create a unique atmosphere.</p>
+                                    </div>
+                                </div>
+                                <div class="gameplay-item">
+                                     <div class="gameplay-image gameplay-image-multiplayer" role="img" aria-label="Gameplay multiplayer feature illustration"></div>
+                                    <div class="gameplay-content">
+                                        <h3>Multiplayer</h3>
+                                        <p>Create your own online servers. Play with friends and with different people from all over the world. Arrange competitions and full-fledged races.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                             <div class="gameplay-slide-grid">
+                                <div class="gameplay-item">
+                                     <div class="gameplay-image gameplay-image-physics" role="img" aria-label="Gameplay physics feature illustration"></div>
+                                    <div class="gameplay-content">
+                                        <h3>Physics</h3>
+                                        <p>Advanced physics engine. The surface of the track in different sections affects the level of grip. Different types of engines: Electric and Gasoline Detailed modeling of the suspension of cars, which adjusts to the surface.</p>
+                                    </div>
+                                </div>
+                                <div class="gameplay-item">
+                                     <div class="gameplay-image gameplay-image-weather" role="img" aria-label="Gameplay weather feature illustration"></div>
+                                    <div class="gameplay-content">
+                                        <h3>Weather</h3>
+                                        <p>Advanced weather change. deterioration or improvement of ride quality due to different weather conditions. The choice of different conditions: Day, Night, Autumn, Summer, Winter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <div class="swiper-pagination"></div>
+                    </div> </div> </section>
+
+        <a href="#" class="back-to-top" aria-label="Вернуться наверх">&#8593;</a>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="social-links">
+                 <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" aria-label="Steam"><img src="images/icons/steam_ico.png" alt="Steam" loading="lazy"></a>
+                 <a href="https://vk.com/gh_games_dev" target="_blank" rel="noopener noreferrer" aria-label="VK"><img src="images/icons/vk_ico.png" alt="VK" loading="lazy"></a>
+                 <a href="https://www.reddit.com/r/RC_CarManiacs/" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><img src="images/icons/reddit_ico.png" alt="Reddit" loading="lazy"></a>
+                 <a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer" aria-label="Discord"><img src="images/icons/discord_ico.png" alt="Discord" loading="lazy"></a>
+                 <a href="https://www.instagram.com/gh_games_dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/icons/instagram_ico.png" alt="Instagram" loading="lazy"></a>
+                 <a href="https://t.me/ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="images/icons/telegram_ico.png" alt="Telegram" loading="lazy"></a>
+                 <a href="https://www.youtube.com/@ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="images/icons/youtube_ico.png" alt="YouTube" loading="lazy"></a>
+            </div>
+            <p class="copyright">copyright 2025 by "gh games" | all rights reserved | gmail: ghgamesdev@gmail.com</p>
         </div>
-        <div class="slider__item filter">
-          <img src="Image\karusel\IMAGE_3.png" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_4.png" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_5.png" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_6.png" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_7.png" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="Image\karusel\IMAGE_8.png" alt="">
-        </div>
-      </div>
+    </footer>
 
-      <!-- Подключаем jQuery -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-
-      <hr class="line3">
-      <h1 class="centr-text-Botton2">About our project:</h1>
-      <hr class="line4">
-
-      <div class="thumb-wrap">
-        <iframe src="https://www.youtube.com/embed/1y_RCS8XakQ?si=1mWyKyOyJabK8ZdM" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <p class="content-para">We are GH Games, and we’re making great game about radio controlled cars. If you ask
-        man, doesn’t matter how old he is, but anyway, with high possibility he could say that he wanna buy rc car.
-        Why? It’s awesome feelings while you’re driving your scaled rc model, and you can feel your car.</p>
-      <p class="content-para">Our game will be about that feelings and emotions, because anyone can try that car,
-        what they wanna buy, or already have, and just ride on in inside our game! That’s great, doesn’t it?</p>
-      <p class="content-para">We’re trying to make realistic physics of cars, realistic controls, movement on the
-        wheels and in the air, we will make and nitro powered cars too! Our cars will have different classes and
-        variations of chassis to choose that one, that should suit for current race.</p>
-
-
-      <hr class="line5">
-      <iframe class="steamVidget" src="https://store.steampowered.com/widget/2717940/" width="646"
-        height="190"></iframe>
-      <hr class="line5">
-      <p class="news"></p>
-
-      <ul class="nav-list2">
-        <li class="nav-item2"><a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/"><img class="h123"
-              src="Image\STEAM_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.instagram.com/gh_games_dev"><img class="h123"
-              src="Image\INSTAGRAM_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://discord.gg/Yb9h4XGbWN"><img class="h123" src="Image\DISCORD_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://t.me/ghgamesdev"><img class="h123" src="Image\TELEGRAM_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://vk.com/gh_games_dev"><img class="h123" src="Image\VK_ICO.png" alt=""></a>
-        </li>
-        <li class="nav-item2"><a href="https://www.patreon.com/GHGamesDev"><img class="h123" src="Image\PATREON_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.youtube.com/@ghgamesdev"><img class="h123"
-              src="Image\YOUTUBE_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.reddit.com/r/RC_CarManiacs"><img class="h123"
-              src="Image\REDDIT_LOGO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.tiktok.com/@ghgamesdev"><img class="h123"
-              src="Image\TIKTOK_ICO.png" alt=""></a></li>
-      </ul>
-    </div>
-  </main>
-
-
-
-  <footer class="footer">
-    <div class="img__footer"> <img class="imgFooter" src="Image\SIDE_IMG_1.png" alt=""></div>
-    <p class="footer__text">Copyright 2024 by "GH Games" · All Rights reserved · GMAIL: ghgamesdev@gmail.com</p>
-  </footer>
-
-  <!--SCRIPT-->
-  <script src="script.js"></script>
-  <script src="slick.min.js"></script>
-  <script src="redirect.js"></script>
-  <script src="js.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
-
 </html>

@@ -1,92 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GH Games</title>
-  <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH Games - Contacts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Resources/favicon.ico" />
+    <meta name="description" content="Contact the GH Games team via Discord or Email. We’re open to communication!">
+	<meta name="keywords" content="gh games, contacts, get in touch, discord, email, support">
 </head>
+<body class="page-contact">
 
-<body class="body">
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="GH Games Home">
+                <img src="images/Resources/GHG_Header.png" alt="GH Games Logo" width="221" height="40">
+            </a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list">&#9776;</button>
+                <ul class="nav-list" id="main-menu-list" role="menu">
+                    <li role="none"><a href="index.html" role="menuitem">GHG</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">ABOUT</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">CONTACT</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!--UP ARROW-->
-  <a href="#" class="to-top">
-    <i class="fas fa-chevron-up"><img src="Image\SQUARE_ARROW_SCROLL_WHITE.png" alt=""></i>
-  </a>
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                 <h1>Contact Information</h1>
+                 <img src="images/Resources/GHG_Logo_White.png" alt="GHG Logo Inverted" loading="lazy">
+            </div>
+        </section>
 
-  <header class="header">
-    <div class="container">
-      <div class="header-nav">
-        <a href="main" class="logo">GH Games</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="main" class="nav-link">RC:CM</a></li>
-            <li class="nav-item"><a href="about" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="support" class="nav-link">Support us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <div class="imgl">
-    <a class="img-logo" href="about"><img class="imgLogo" src="Image\GHG_AVATAR_ROUND.png" alt=""></a>
-  </div>
+        <section class="contact-section container py-4">
+             <h2 class="uppercase">We’re opened to communicate!</h2>
 
-  <main class="main">
-    <div class="mainContainer">
-      <h1 class="centr-text">Contact us</h1>
-      <hr class="line">
-      <hr class="line2">
-      <h1 class="centr-text-Botton">Contact information:</h1>
-      <hr class="line3">
+            <div class="contact-blocks">
+                 <div class="contact-block discord">
+                      <h3>Questions or Suggestions?</h3>
+                     <p>If you have any questions or any suggestions: Join in our Discord and write your message based on rules in pinned message. Special channel for that purposes is: #contact-channel</p>
+                     <p><a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer">Join Discord Server</a></p>
+                 </div>
 
-      <p class="TextContact">If you have any questions or any suggestions:<br><br><br>
+                 <div class="contact-block mail">
+                       <h3>Commercial Offers?</h3>
+                     <p>If you have any commercial offers or suggestions: Type a message on our Mail please. Our mail is:</p>
+                       <div class="email-copy-wrapper">
+                           <a href="mailto:ghgamesdev@gmail.com" class="contact-email-link">
+                               <span id="email-to-copy">ghgamesdev@gmail.com</span>
+                            </a>
+                           <button class="copy-button" aria-label="Скопировать Email" data-clipboard-target="#email-to-copy">
+                                &#x2398; </button>
+                           <span class="copy-confirmation" aria-live="polite">Скопировано!</span>
+                       </div>
+                 </div>
+            </div>
+        </section>
 
-        Join in our Discord and write your message based on rules in pinned message.<br>
-        Special channel for that purposes is: #contact-channel
-      </p>
+        <a href="#" class="back-to-top" aria-label="Вернуться наверх">&#8593;</a>
+    </main>
 
-      <hr class="line4">
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" aria-label="Steam"><img src="images/icons/steam_ico.png" alt="Steam" loading="lazy"></a>
+                 <a href="https://vk.com/gh_games_dev" target="_blank" rel="noopener noreferrer" aria-label="VK"><img src="images/icons/vk_ico.png" alt="VK" loading="lazy"></a>
+                 <a href="https://www.reddit.com/r/RC_CarManiacs/" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><img src="images/icons/reddit_ico.png" alt="Reddit" loading="lazy"></a>
+                 <a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer" aria-label="Discord"><img src="images/icons/discord_ico.png" alt="Discord" loading="lazy"></a>
+                 <a href="https://www.instagram.com/gh_games_dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/icons/instagram_ico.png" alt="Instagram" loading="lazy"></a>
+                 <a href="https://t.me/ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="images/icons/telegram_ico.png" alt="Telegram" loading="lazy"></a>
+                 <a href="https://www.youtube.com/@ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="images/icons/youtube_ico.png" alt="YouTube" loading="lazy"></a>
+            </div>
+            <p class="copyright">copyright 2025 by "gh games" | all rights reserved | gmail: ghgamesdev@gmail.com</p>
+        </div>
+    </footer>
 
-      <p class="TextContact2">If you have any commercial offers or suggestions:<br><br><br>
-
-        Type a message on our Mail please.<br>
-        Our mail is: ghgamesdev@gmail.com<br><br><br>
-
-        We’re opened to communicate!
-      </p>
-
-      <ul class="nav-list2">
-        <li class="nav-item2"><a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/"><img class="h123"
-              src="Image\STEAM_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.instagram.com/gh_games_dev"><img class="h123"
-              src="Image\INSTAGRAM_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://discord.gg/Yb9h4XGbWN"><img class="h123" src="Image\DISCORD_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://t.me/ghgamesdev"><img class="h123" src="Image\TELEGRAM_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://vk.com/gh_games_dev"><img class="h123" src="Image\VK_ICO.png" alt=""></a>
-        </li>
-        <li class="nav-item2"><a href="https://www.patreon.com/GHGamesDev"><img class="h123" src="Image\PATREON_ICO.png"
-              alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.youtube.com/@ghgamesdev"><img class="h123"
-              src="Image\YOUTUBE_ICO.png" alt=""></a></li>
-        <li class="nav-item2"><a href="https://www.reddit.com/r/RC_CarManiacs"><img class="h123"
-              src="Image\REDDIT_LOGO.png" alt=""></a></li>
-      </ul>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__text">Copyright 2024 by "GH Games" · All Rights reserved · GMAIL: ghgamesdev@gmail.com</p>
-  </footer>
-
-  <!--SCRIPT-->
-  <script src="script.js"></script>
-  <script src="slick.min.js"></script>
-  <script src="redirect.js"></script>
-  <script src="js.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
-
 </html>
