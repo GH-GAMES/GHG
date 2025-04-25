@@ -89,33 +89,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyButton = document.querySelector('.copy-button');
     const emailSpan = document.getElementById('email-to-copy');
     const confirmationSpan = document.querySelector('.copy-confirmation');
+    const copyButtonTextSpan = copyButton?.querySelector('span'); // Get the span inside the button
 
     if (copyButton && emailSpan && confirmationSpan) {
         copyButton.addEventListener('click', () => {
             const email = emailSpan.textContent;
-            // Use Clipboard API to copy text
             navigator.clipboard.writeText(email).then(() => {
-                // Show confirmation message
-                confirmationSpan.textContent = 'Скопировано!'; // Reset message text
+                // Show confirmation message - Use translation
+                const copiedKey = confirmationSpan.getAttribute('data-translate');
+                confirmationSpan.textContent = translations[currentLanguage]?.[copiedKey] || 'Copied!'; // Use translated text
                 confirmationSpan.classList.add('visible');
-                // Hide confirmation after 2 seconds
                 setTimeout(() => {
                     confirmationSpan.classList.remove('visible');
                 }, 2000);
             }).catch(err => {
-                // Handle potential errors (e.g., permissions denied)
                 console.error('Failed to copy email: ', err);
-                confirmationSpan.textContent = 'Ошибка!'; // Show error message
+                confirmationSpan.textContent = 'Error!'; // Keep Error simple
                 confirmationSpan.classList.add('visible');
-                 // Hide error message after 2 seconds
                 setTimeout(() => {
                     confirmationSpan.classList.remove('visible');
-                    // Reset to default text after hiding
-                    setTimeout(() => { confirmationSpan.textContent = 'Скопировано!'; }, 300);
+                     // Reset to default translated text after hiding error
+                    setTimeout(() => {
+                         const copiedKey = confirmationSpan.getAttribute('data-translate');
+                         confirmationSpan.textContent = translations[currentLanguage]?.[copiedKey] || 'Copied!';
+                    }, 300);
                 }, 2000);
             });
         });
-    } // No warning needed if elements are not on the current page
+    }
 
     // --- Инициализация Swiper для Gameplay (index.html) ---
     const gameplaySwiperContainer = document.querySelector('.gameplay-swiper');
@@ -124,66 +125,61 @@ document.addEventListener('DOMContentLoaded', () => {
             const gameplaySwiper = new Swiper(gameplaySwiperContainer, {
                 loop: true,
                 grabCursor: true,
-                // effect: 'fade', // Fade effect removed for standard slide
-                // fadeEffect: { crossFade: true },
                 autoplay: {
                     delay: 5000,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true, // Pause autoplay on hover
+                    pauseOnMouseEnter: true,
                  },
-                speed: 800, // <<< Increased speed for smoother transition
+                speed: 800,
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true // Allow clicking on pagination bullets
+                    clickable: true
                 },
-                // Navigation arrows are hidden via CSS for this slider
-                navigation: {
+                navigation: { // Keep navigation config even if hidden by CSS
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 },
                 keyboard: {
-                    enabled: true, // Enable keyboard navigation
+                    enabled: true,
                     onlyInViewport: false,
                 },
-                spaceBetween: 20, // Space between slides if multiple were visible
+                spaceBetween: 20,
             });
         } catch (e) {
             console.error("Error initializing Gameplay Swiper:", e);
         }
     } else if (document.querySelector('.gameplay')) {
-         // Only warn if the gameplay section exists but Swiper fails
          console.warn('Swiper library not loaded or .gameplay-swiper container not found.');
     }
 
-    // --- Инициализация Swiper для Developers (about.html) - ЭФФЕКТ COVERFLOW ---
+    // --- Инициализация Swiper для Developers (about.html) ---
     const developerSwiperContainer = document.querySelector('.developer-swiper');
     if (typeof Swiper !== 'undefined' && developerSwiperContainer) {
          try {
             const developerSwiper = new Swiper(developerSwiperContainer, {
-                // <<< Coverflow Configuration >>>
-                effect: 'coverflow',    // Enable coverflow effect
-                grabCursor: true,       // Show grab cursor on hover
-                centeredSlides: true,   // Center the active slide
-                slidesPerView: 'auto',  // Automatically determine slides per view based on size
-                loop: true,             // Enable continuous loop
-                speed: 800,             // <<< Increased speed for smoother transition
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                loop: true,
+                speed: 800,
                 coverflowEffect: {
-                    rotate: 45,         // Rotation angle for side slides (adjust as needed)
-                    stretch: 0,         // Space between slides (0 means no overlap modification)
-                    depth: 120,         // Depth effect for side slides (Z-axis)
-                    modifier: 1,        // Effect multiplier (1 = standard)
-                    slideShadows: true, // Enable shadows on side slides
+                    rotate: 45,
+                    stretch: 0,
+                    depth: 120,
+                    modifier: 1,
+                    slideShadows: true,
                 },
                 autoplay: {
-                    delay: 4500,        // Slightly faster autoplay
+                    delay: 4500,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true, // Pause autoplay on hover
+                    pauseOnMouseEnter: true,
                 },
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true
                 },
-                navigation: { // <<< Enable Navigation Arrows >>>
+                navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 },
@@ -191,76 +187,69 @@ document.addEventListener('DOMContentLoaded', () => {
                     enabled: true,
                     onlyInViewport: false
                 },
-                // spaceBetween is less relevant with coverflow, remove or set to 0
-                // breakpoints: { ... } // Removed breakpoints, 'auto' slidesPerView is generally better for coverflow
             });
         } catch(e) {
              console.error("Error initializing Developer Swiper:", e);
         }
     } else if (document.querySelector('.developers-team')) {
-        // Only warn if the developers section exists but Swiper fails
         console.warn('Swiper library not loaded or .developer-swiper container not found.');
     }
 
     // --- Анимация элементов при прокрутке (Intersection Observer) ---
-    // <<< Target more elements for scroll animation >>>
     const scrollTargets = document.querySelectorAll(
         '.game-card, .gameplay-card-wrapper, .team-card, .developer-card, .company-card, .contact-block, section > .container > h2:not(.gameplay-card-wrapper > h2):not(.contact-section > .container > h2), .game-info'
     );
 
-    // Check if IntersectionObserver is supported and targets exist
     if ("IntersectionObserver" in window && scrollTargets.length > 0) {
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
-                // If the element is intersecting (visible)
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible'); // Add 'visible' class to trigger animation
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    // Delay adding the visible class slightly for a smoother effect
+                    setTimeout(() => {
+                         entry.target.classList.add('visible');
+                    }, 100); // Adjust delay as needed (e.g., 100ms)
+
+                    observer.unobserve(entry.target);
                 }
             });
         };
 
         const observerOptions = {
-            root: null, // Use the viewport as the root
+            root: null,
             rootMargin: '0px',
-            threshold: 0.1 // Trigger when 10% of the element is visible
+            threshold: 0.1
         };
 
         const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-        // Observe each target element
         scrollTargets.forEach(target => {
-            target.classList.add('animate-on-scroll'); // Add base class for styling
+            target.classList.add('animate-on-scroll');
             observer.observe(target);
         });
     } else if (scrollTargets.length > 0) {
-         // Fallback for browsers without IntersectionObserver
          console.warn('IntersectionObserver not supported, animations will show immediately.');
          scrollTargets.forEach(target => {
-             // Make elements visible immediately if observer isn't supported
              target.style.opacity = '1';
              target.style.transform = 'none';
          });
-    } // No warning if no targets found
+    }
 
     // --- Эффект ужимания при клике на стрелку скролла (Homepage Hero) ---
     const scrollLink = document.querySelector('.scroll-down-link');
-    const gameInfoSection = document.querySelector('.game-info'); // Target section below hero
-    const gameplaySection = document.querySelector('.gameplay'); // Target next section too
+    const gameInfoSection = document.querySelector('.game-info');
+    const gameplaySection = document.querySelector('.gameplay');
 
-    if (scrollLink && gameInfoSection) { // Check if scroll link and first target exist
+    if (scrollLink && gameInfoSection) {
         scrollLink.addEventListener('click', (e) => {
-            // e.preventDefault(); // Keep default scroll behavior unless you want custom scroll
+            // e.preventDefault(); // Keep default scroll behavior
 
-            // Add shrink class briefly for visual feedback
             gameInfoSection.classList.add('shrink-effect');
-            if (gameplaySection) gameplaySection.classList.add('shrink-effect'); // Apply to next section if it exists
+            if (gameplaySection) gameplaySection.classList.add('shrink-effect');
 
-            // Remove the class after the transition duration (300ms) + a little buffer
             setTimeout(() => {
                 gameInfoSection.classList.remove('shrink-effect');
                 if (gameplaySection) gameplaySection.classList.remove('shrink-effect');
-            }, 350); // Matches CSS transition duration
+            }, 350);
         });
     }
 
@@ -268,15 +257,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutHero = document.querySelector('.page-about .hero');
     const contactHero = document.querySelector('.page-contact .hero');
 
-    // Function to handle parallax calculation and update
     const handleParallax = () => {
-        if (!aboutHero && !contactHero) return; // Exit if no relevant hero sections found
+        if (!aboutHero && !contactHero) return;
 
         const scrollY = window.scrollY;
-        // Adjust multiplier for desired parallax speed (smaller = slower)
-        const parallaxOffset = -(scrollY * 0.15); // Move background up slightly as page scrolls down
+        const parallaxOffset = -(scrollY * 0.15);
 
-        // Apply the offset using a CSS variable (--scroll-offset)
         if (aboutHero) {
             aboutHero.style.setProperty('--scroll-offset', `${parallaxOffset}px`);
         }
@@ -285,12 +271,177 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Add scroll listener only if relevant hero sections exist
     if (aboutHero || contactHero) {
-        // Use passive: true for better scroll performance
         window.addEventListener('scroll', handleParallax, { passive: true });
-        // Call once initially to set the correct position on page load
-        handleParallax();
+        handleParallax(); // Initial call
     }
+
+
+    // --- НОВЫЙ КОД ЛОКАЛИЗАЦИИ ---
+    const languageSelector = document.querySelector('.language-selector');
+    const selectedLangDisplay = languageSelector?.querySelector('.selected-lang');
+    const langOptions = languageSelector?.querySelector('.lang-options');
+    const selectedLangFlag = document.getElementById('selected-lang-flag');
+    const selectedLangCode = document.getElementById('selected-lang-code');
+
+    // Fallback to 'en' if saved language is invalid or not found in future
+    const supportedLangs = ['ru', 'en', 'de', 'fr', 'es', 'ar', 'zh', 'ja'];
+    let savedLang = localStorage.getItem('language') || 'ru'; // Default ru
+    if (!supportedLangs.includes(savedLang)) {
+        savedLang = 'en'; // Fallback to English if saved lang is weird
+        localStorage.setItem('language', savedLang); // Correct localStorage
+    }
+    let currentLanguage = savedLang;
+    let translations = {};
+
+    // Function to fetch localization data
+    async function fetchTranslations() {
+        try {
+            // Assuming localizations.json is in the root or same dir as HTML files
+            // If it's in /scripts/, change the path to 'scripts/localizations.json'
+            const response = await fetch('localizations.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            translations = await response.json();
+            // Ensure the initially determined language is applied
+            setLanguage(currentLanguage);
+        } catch (error) {
+            console.error("Could not fetch translations:", error);
+            // Fallback or show error
+            document.body.style.visibility = 'visible'; // Make sure content is visible even if translations fail
+        }
+    }
+
+    // Function to apply translations to the page
+    function applyTranslations(lang) {
+        if (!translations || !translations[lang]) {
+            console.warn(`Translations for language "${lang}" not found or not loaded yet.`);
+            // Make sure content is visible
+            document.body.style.visibility = 'visible';
+            return;
+        }
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            const translation = translations[lang][key];
+
+            if (translation !== undefined && translation !== null) {
+                const attrToTranslate = element.getAttribute('data-translate-attr');
+                if (attrToTranslate) {
+                    // Special case for lang attribute on <html>
+                    if (element.tagName === 'HTML' && attrToTranslate === 'lang') {
+                         element.lang = translation;
+                    } else {
+                         element.setAttribute(attrToTranslate, translation);
+                    }
+                } else {
+                    // Use textContent for security unless you specifically need HTML
+                    element.textContent = translation;
+                }
+            } else if (key) { // Only warn if a key was actually provided
+                console.warn(`Translation key "${key}" not found for language "${lang}".`);
+            }
+        });
+
+         // Update ARIA label for menu toggle dynamically
+         const menuToggle = document.querySelector('.menu-toggle');
+         if(menuToggle) {
+             const menuToggleKey = 'menu_toggle_label'; // Use the key from JSON
+             if(translations[lang][menuToggleKey]){
+                 menuToggle.setAttribute('aria-label', translations[lang][menuToggleKey]);
+             }
+         }
+
+         // Make body visible after applying translations
+         document.body.style.visibility = 'visible';
+    }
+
+    // Function to set the language
+    function setLanguage(lang) {
+        if (!supportedLangs.includes(lang)) {
+            console.error(`Attempted to set unsupported language: "${lang}"`);
+            return; // Don't proceed with unsupported language
+        }
+        currentLanguage = lang;
+        localStorage.setItem('language', lang); // Save language preference
+
+        // Apply translations and update UI
+        applyTranslations(lang);
+
+        // Update the language selector display
+        const selectedOption = langOptions?.querySelector(`li[data-lang="${lang}"]`);
+        if (selectedOption && selectedLangFlag && selectedLangCode) {
+            selectedLangFlag.textContent = selectedOption.querySelector('span').textContent;
+            selectedLangCode.textContent = lang.toUpperCase();
+        } else if (selectedLangFlag && selectedLangCode) {
+            // Fallback if options not found (e.g., during initial load)
+            const defaultFlags = { ru: '🇷🇺', en: '🇬🇧', de: '🇩🇪', fr: '🇫🇷', es: '🇪🇸', ar: '🇸🇦', zh: '🇨🇳', ja: '🇯🇵' };
+            selectedLangFlag.textContent = defaultFlags[lang] || '🏳️';
+            selectedLangCode.textContent = lang.toUpperCase();
+        }
+
+        // Add/Remove 'rtl' class for Arabic
+        if (lang === 'ar') {
+            document.body.classList.add('rtl');
+        } else {
+            document.body.classList.remove('rtl');
+        }
+
+        // Close the dropdown after selection
+        if (langOptions) langOptions.style.display = 'none';
+    }
+
+    // Event Listeners for Language Selector
+    if (languageSelector && selectedLangDisplay && langOptions) {
+        selectedLangDisplay.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const currentDisplay = window.getComputedStyle(langOptions).display;
+            langOptions.style.display = currentDisplay === 'block' ? 'none' : 'block';
+        });
+
+        langOptions.addEventListener('click', (e) => {
+            const targetLi = e.target.closest('li[data-lang]');
+            if (targetLi) {
+                const newLang = targetLi.getAttribute('data-lang');
+                if (newLang !== currentLanguage) {
+                     setLanguage(newLang);
+                } else {
+                     // Close dropdown if clicking the already selected language
+                     langOptions.style.display = 'none';
+                }
+            }
+        });
+
+        // Close dropdown if clicking outside
+        document.addEventListener('click', (e) => {
+            if (!languageSelector.contains(e.target) && langOptions.style.display === 'block') {
+                langOptions.style.display = 'none';
+            }
+        });
+
+        // Close dropdown on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && langOptions.style.display === 'block') {
+                langOptions.style.display = 'none';
+            }
+        });
+
+    } else {
+         console.warn("Language selector elements not found.");
+         // Make body visible even if selector fails
+         document.body.style.visibility = 'visible';
+    }
+
+    // Hide body initially to prevent flash of untranslated content (FOUC)
+    // Apply only if not already visible (e.g., error occurred)
+    if(document.body.style.visibility !== 'visible') {
+        document.body.style.visibility = 'hidden';
+    }
+
+    // Initial fetch of translations when the DOM is ready
+    fetchTranslations();
+
+    // --- End Localization ---
+
 
 }); // End DOMContentLoaded

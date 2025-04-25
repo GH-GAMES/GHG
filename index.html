@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-translate-attr="lang" data-translate="html_lang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GH Games</title>
+    <title data-translate="page_title_home">RC:CM</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/Resources/favicon.ico" />
-    <meta name="description" content="GH Games is a game development studio. Learn more about our game RC Car Maniacs and stay up to date with the latest news.">
-	<meta name="keywords" content="gh games, rc car maniacs, games, game development, racing, simulator">
+    <meta name="description" content="RC:CM is a game development studio. Learn more about our game RC Car Maniacs and stay up to date with the latest news." data-translate-attr="content" data-translate="meta_desc_home">
+	<meta name="keywords" content="gh games, rc car maniacs, games, game development, racing, simulator, rc:cm">
 </head>
 <body>
 
     <header class="site-header">
         <div class="container header-container">
-            <a href="index.html" class="logo" aria-label="GH Games Home">
+            <a href="index.html" class="logo" aria-label="RC:CM Home">
                 <img src="images/Resources/GHG_Header.png" alt="GH Games Logo" width="221" height="40">
             </a>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list">&#9776;</button>
-                <ul class="nav-list" id="main-menu-list" role="menu">
-                    <li role="none"><a href="index.html" role="menuitem">GHG</a></li>
-                    <li role="none"><a href="about.html" role="menuitem">ABOUT</a></li>
-                    <li role="none"><a href="contact.html" role="menuitem">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list" data-translate-aria="menu_toggle_label" data-translate-attr="aria-label">☰</button>
+                    <ul class="nav-list" id="main-menu-list" role="menu">
+                        <li role="none"><a href="index.html" role="menuitem" data-translate="nav_rccm">RC:CM</a></li>
+                        <li role="none"><a href="about.html" role="menuitem" data-translate="nav_about">ABOUT</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem" data-translate="nav_contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                   <label for="lang-select" class="visually-hidden" data-translate="lang_select_label">Language:</label>
+                   <div class="selected-lang">
+                       <span id="selected-lang-flag">🇷🇺</span> <span id="selected-lang-code">RU</span> </div>
+                   <ul class="lang-options">
+                       <li data-lang="ru"><span>🇷🇺</span> Русский</li>
+                       <li data-lang="en"><span>🇬🇧</span> English</li>
+                       <li data-lang="de"><span>🇩🇪</span> Deutsch</li>
+                       <li data-lang="fr"><span>🇫🇷</span> Français</li>
+                       <li data-lang="es"><span>🇪🇸</span> Español</li>
+                       <li data-lang="ar"><span>🇸🇦</span> العربية</li>
+                       <li data-lang="zh"><span>🇨🇳</span> 中文</li>
+                       <li data-lang="ja"><span>🇯🇵</span> 日本語</li>
+                   </ul>
+               </div>
+            </div>
+             </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content container">
-                 <img src="images/Resources/DSC.png" alt="DREAM SPEED CARS" class="hero-title-image">
-                <img src="images/Resources/DSC2.png" alt="Follow our social networks to read the latest news about the project!" class="hero-subtitle-image">
-                <a href="#game-section" class="scroll-down-link" aria-label="Прокрутить к информации об игре">&#9660;</a>
+                 <h1 class="hero-main-title" data-translate="hero_main_title"> DREAM<br>SPEED<br>CARS
+                 </h1>
+                 <p class="hero-main-subtitle" data-translate="hero_main_subtitle"> Follow our social networks to read the latest<br>news about our projects! </p>
+                 <a href="#game-section" class="scroll-down-link" aria-label="Прокрутить к информации об игре" data-translate="scroll_down_label" data-translate-attr="aria-label">▼</a>
             </div>
         </section>
 
         <section id="game-section" class="game-info container py-4 animate-on-scroll">
-             <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" class="game-card" title="Перейти на страницу RC Car Maniacs в Steam">
-                <div class="game-card-image" role="img" aria-label="RC Car Maniacs game preview"></div>
+             <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" class="game-card" title="Перейти на страницу RC Car Maniacs в Steam" data-translate="game_card_title" data-translate-attr="title">
+                <div class="game-card-image" role="img" aria-label="RC Car Maniacs game preview" data-translate="game_preview_label" data-translate-attr="aria-label"></div>
                 <div class="game-card-content">
-                    <h2>RC: CAR MANIACS</h2>
-                    <p>RC:CM is an exciting arcade simulator of radio–controlled cars, which will allow you to plunge into the world of children's fantasies, driving radio-controlled cars: rally, drift, high-speed and other types of cars! Race with your friends!</p>
+                    <h2 data-translate="game_title">RC: CAR MANIACS</h2>
+                    <p data-translate="game_description">RC:CM is an exciting arcade simulator of radio–controlled cars, which will allow you to plunge into the world of children's fantasies, driving radio-controlled cars: rally, drift, high-speed and other types of cars! Race with your friends!</p>
                 </div>
                 <div class="game-card-steam">
-                    <span>STEAM</span> <img src="images/icons/steam_ico.png" alt="Steam Logo">
+                    <span data-translate="game_steam_button">STEAM</span> <img src="images/icons/steam_ico.png" alt="Steam Logo">
                 </div>
             </a>
         </section>
 
         <section class="gameplay container py-4">
-            <div class="gameplay-card-wrapper animate-on-scroll"> <h2 class="uppercase">Gameplay</h2>
+            <div class="gameplay-card-wrapper animate-on-scroll">
+                <h2 class="uppercase" data-translate="gameplay_title">Gameplay</h2>
                 <div class="swiper gameplay-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="gameplay-slide-grid">
                                 <div class="gameplay-item">
-                                    <div class="gameplay-image gameplay-image-sound" role="img" aria-label="Gameplay sound feature illustration"></div>
+                                    <div class="gameplay-image gameplay-image-sound" role="img" aria-label="Gameplay sound feature illustration" data-translate="gameplay_sound_label" data-translate-attr="aria-label"></div>
                                     <div class="gameplay-content">
-                                        <h3>Sound</h3>
-                                        <p>Detailed sounds of each track surface. Realistic sound environment. The soundtracks written for the game create a unique atmosphere.</p>
+                                        <h3 data-translate="gameplay_sound_title">Sound</h3>
+                                        <p data-translate="gameplay_sound_desc">Detailed sounds of each track surface. Realistic sound environment. The soundtracks written for the game create a unique atmosphere.</p>
                                     </div>
                                 </div>
                                 <div class="gameplay-item">
-                                     <div class="gameplay-image gameplay-image-multiplayer" role="img" aria-label="Gameplay multiplayer feature illustration"></div>
+                                     <div class="gameplay-image gameplay-image-multiplayer" role="img" aria-label="Gameplay multiplayer feature illustration" data-translate="gameplay_multiplayer_label" data-translate-attr="aria-label"></div>
                                     <div class="gameplay-content">
-                                        <h3>Multiplayer</h3>
-                                        <p>Create your own online servers. Play with friends and with different people from all over the world. Arrange competitions and full-fledged races.</p>
+                                        <h3 data-translate="gameplay_multiplayer_title">Multiplayer</h3>
+                                        <p data-translate="gameplay_multiplayer_desc">Create your own online servers. Play with friends and with different people from all over the world. Arrange competitions and full-fledged races.</p>
                                     </div>
                                 </div>
                             </div>
@@ -78,25 +98,28 @@
                         <div class="swiper-slide">
                              <div class="gameplay-slide-grid">
                                 <div class="gameplay-item">
-                                     <div class="gameplay-image gameplay-image-physics" role="img" aria-label="Gameplay physics feature illustration"></div>
+                                     <div class="gameplay-image gameplay-image-physics" role="img" aria-label="Gameplay physics feature illustration" data-translate="gameplay_physics_label" data-translate-attr="aria-label"></div>
                                     <div class="gameplay-content">
-                                        <h3>Physics</h3>
-                                        <p>Advanced physics engine. The surface of the track in different sections affects the level of grip. Different types of engines: Electric and Gasoline Detailed modeling of the suspension of cars, which adjusts to the surface.</p>
+                                        <h3 data-translate="gameplay_physics_title">Physics</h3>
+                                        <p data-translate="gameplay_physics_desc">Advanced physics engine. The surface of the track in different sections affects the level of grip. Different types of engines: Electric and Gasoline Detailed modeling of the suspension of cars, which adjusts to the surface.</p>
                                     </div>
                                 </div>
                                 <div class="gameplay-item">
-                                     <div class="gameplay-image gameplay-image-weather" role="img" aria-label="Gameplay weather feature illustration"></div>
+                                     <div class="gameplay-image gameplay-image-weather" role="img" aria-label="Gameplay weather feature illustration" data-translate="gameplay_weather_label" data-translate-attr="aria-label"></div>
                                     <div class="gameplay-content">
-                                        <h3>Weather</h3>
-                                        <p>Advanced weather change. deterioration or improvement of ride quality due to different weather conditions. The choice of different conditions: Day, Night, Autumn, Summer, Winter.</p>
+                                        <h3 data-translate="gameplay_weather_title">Weather</h3>
+                                        <p data-translate="gameplay_weather_desc">Advanced weather change. Deterioration or improvement of ride quality due to different weather conditions. The choice of different conditions: Day, Night, Autumn, Summer, Winter.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> <div class="swiper-pagination"></div>
-                    </div> </div> </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
-        <a href="#" class="back-to-top" aria-label="Вернуться наверх">&#8593;</a>
+        <a href="#" class="back-to-top" aria-label="Return To Top" data-translate="back_to_top_label" data-translate-attr="aria-label">↑</a>
     </main>
 
     <footer class="site-footer">
@@ -110,7 +133,7 @@
                  <a href="https://t.me/ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="images/icons/telegram_ico.png" alt="Telegram" loading="lazy"></a>
                  <a href="https://www.youtube.com/@ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="images/icons/youtube_ico.png" alt="YouTube" loading="lazy"></a>
             </div>
-            <p class="copyright">copyright 2025 by "gh games" | all rights reserved | gmail: ghgamesdev@gmail.com</p>
+            <p class="copyright" data-translate="footer_copyright">Copyright 2025 by "GH Games" | All rights reserved | Gmail: ghgamesdev@gmail.com</p>
         </div>
     </footer>
 

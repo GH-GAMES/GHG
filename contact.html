@@ -1,75 +1,94 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-translate-attr="lang" data-translate="html_lang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GH Games - Contacts</title>
+    <title data-translate="page_title_contact">RC:CM - Contacts</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/Resources/favicon.ico" />
-    <meta name="description" content="Contact the GH Games team via Discord or Email. We’re open to communication!">
-	<meta name="keywords" content="gh games, contacts, get in touch, discord, email, support">
+    <meta name="description" content="Contact the RC:CM team via Discord or Email. We’re open to communication!" data-translate-attr="content" data-translate="meta_desc_contact">
+	<meta name="keywords" content="gh games, contacts, get in touch, discord, email, support, rc:cm">
 </head>
 <body class="page-contact">
 
     <header class="site-header">
         <div class="container header-container">
-            <a href="index.html" class="logo" aria-label="GH Games Home">
+            <a href="index.html" class="logo" aria-label="RC:CM Home">
                 <img src="images/Resources/GHG_Header.png" alt="GH Games Logo" width="221" height="40">
             </a>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list">&#9776;</button>
-                <ul class="nav-list" id="main-menu-list" role="menu">
-                    <li role="none"><a href="index.html" role="menuitem">GHG</a></li>
-                    <li role="none"><a href="about.html" role="menuitem">ABOUT</a></li>
-                    <li role="none"><a href="contact.html" role="menuitem">CONTACT</a></li>
-                 </ul>
-            </nav>
-        </div>
+
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu-list" data-translate-aria="menu_toggle_label" data-translate-attr="aria-label">☰</button>
+                    <ul class="nav-list" id="main-menu-list" role="menu">
+                        <li role="none"><a href="index.html" role="menuitem" data-translate="nav_rccm">RC:CM</a></li>
+                        <li role="none"><a href="about.html" role="menuitem" data-translate="nav_about">ABOUT</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem" data-translate="nav_contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                   <label for="lang-select" class="visually-hidden" data-translate="lang_select_label">Language:</label>
+                   <div class="selected-lang">
+                       <span id="selected-lang-flag">🇷🇺</span> <span id="selected-lang-code">RU</span> </div>
+                   <ul class="lang-options">
+                       <li data-lang="ru"><span>🇷🇺</span> Русский</li>
+                       <li data-lang="en"><span>🇬🇧</span> English</li>
+                       <li data-lang="de"><span>🇩🇪</span> Deutsch</li>
+                       <li data-lang="fr"><span>🇫🇷</span> Français</li>
+                       <li data-lang="es"><span>🇪🇸</span> Español</li>
+                       <li data-lang="ar"><span>🇸🇦</span> العربية</li>
+                       <li data-lang="zh"><span>🇨🇳</span> 中文</li>
+                       <li data-lang="ja"><span>🇯🇵</span> 日本語</li>
+                   </ul>
+               </div>
+            </div>
+             </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content container">
-                 <h1>Contact Information</h1>
-                 <img src="images/Resources/GHG_Logo_White.png" alt="GHG Logo Inverted" loading="lazy">
+                 <h1 data-translate="contact_hero_title">Contact Information</h1>
+                 <img src="images/Resources/GHG_Logo_White.png" alt="RC:CM (or GHG) Logo Inverted" loading="lazy" data-translate="contact_logo_alt" data-translate-attr="alt">
             </div>
         </section>
 
         <section class="contact-section container py-4">
-             <h2 class="uppercase">We’re opened to communicate!</h2>
+             <h2 class="uppercase" data-translate="contact_open_title">We’re opened to communicate!</h2>
 
             <div class="contact-blocks">
-                 <div class="contact-block discord">
-                      <h3>Questions or Suggestions?</h3>
-                     <p>If you have any questions or any suggestions: Join in our Discord and write your message based on rules in pinned message. Special channel for that purposes is: #contact-channel</p>
-                     <p><a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer">Join Discord Server</a></p>
+                 <div class="contact-block discord animate-on-scroll">
+                      <h3 data-translate="contact_questions_title">Questions or Suggestions?</h3>
+                     <p data-translate="contact_questions_desc">If you have any questions or any suggestions: Join in our Discord and write your message based on rules in pinned message. Special channel for that purposes is: #contact-channel</p>
+                     <p><a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer" data-translate="contact_questions_join">Join Discord Server</a></p>
                  </div>
 
-                 <div class="contact-block mail">
-                       <h3>Commercial Offers?</h3>
-                     <p>If you have any commercial offers or suggestions: Type a message on our Mail please. Our mail is:</p>
+                 <div class="contact-block mail animate-on-scroll">
+                       <h3 data-translate="contact_offers_title">Any Commercial Offers?</h3>
+                     <p data-translate="contact_offers_desc">If you have any commercial offers or suggestions: Type a message on our Mail please. Our mail is:</p>
                        <div class="email-copy-wrapper">
                            <a href="mailto:ghgamesdev@gmail.com" class="contact-email-link">
                                <span id="email-to-copy">ghgamesdev@gmail.com</span>
                             </a>
-                           <button class="copy-button" aria-label="Скопировать Email" data-clipboard-target="#email-to-copy">
-                                &#x2398; </button>
-                           <span class="copy-confirmation" aria-live="polite">Скопировано!</span>
+                           <button class="copy-button" aria-label="Copy Email" data-clipboard-target="#email-to-copy" data-translate="copy_button_aria_label" data-translate-attr="aria-label" >
+                                <span data-translate="copy_button_text">⎘</span>
+                           </button>
+                           <span class="copy-confirmation" aria-live="polite" data-translate="copied_text">"Copied!"</span>
                        </div>
                  </div>
             </div>
         </section>
 
-        <a href="#" class="back-to-top" aria-label="Вернуться наверх">&#8593;</a>
+        <a href="#" class="back-to-top" aria-label="Return To Top" data-translate="back_to_top_label" data-translate-attr="aria-label">↑</a>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="social-links">
-                <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" aria-label="Steam"><img src="images/icons/steam_ico.png" alt="Steam" loading="lazy"></a>
+                 <a href="https://store.steampowered.com/app/2717940/RC_Car_Maniacs/" target="_blank" rel="noopener noreferrer" aria-label="Steam"><img src="images/icons/steam_ico.png" alt="Steam" loading="lazy"></a>
                  <a href="https://vk.com/gh_games_dev" target="_blank" rel="noopener noreferrer" aria-label="VK"><img src="images/icons/vk_ico.png" alt="VK" loading="lazy"></a>
                  <a href="https://www.reddit.com/r/RC_CarManiacs/" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><img src="images/icons/reddit_ico.png" alt="Reddit" loading="lazy"></a>
                  <a href="https://discord.com/invite/Yb9h4XGbWN" target="_blank" rel="noopener noreferrer" aria-label="Discord"><img src="images/icons/discord_ico.png" alt="Discord" loading="lazy"></a>
@@ -77,7 +96,7 @@
                  <a href="https://t.me/ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="images/icons/telegram_ico.png" alt="Telegram" loading="lazy"></a>
                  <a href="https://www.youtube.com/@ghgamesdev" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="images/icons/youtube_ico.png" alt="YouTube" loading="lazy"></a>
             </div>
-            <p class="copyright">copyright 2025 by "gh games" | all rights reserved | gmail: ghgamesdev@gmail.com</p>
+            <p class="copyright" data-translate="footer_copyright">Copyright 2025 by "GH Games" | All rights reserved | Gmail: ghgamesdev@gmail.com</p>
         </div>
     </footer>
 
