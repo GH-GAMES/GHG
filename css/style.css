@@ -109,6 +109,7 @@ main { flex-grow: 1; }
     font-size: 2rem; /* Базовый шрифт * 2 (1rem * 2) */
     max-width: 60ch; /* Ограничение ширины для читаемости */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Легкая тень */
+	white-space: pre-line;
 }
 /* --- Конец стилей для нового текста в Hero --- */
 
