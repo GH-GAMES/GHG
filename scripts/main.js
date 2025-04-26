@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fallback to 'en' if saved language is invalid or not found in future
     const supportedLangs = ['ru', 'en', 'de', 'fr', 'es', 'ar', 'zh', 'ja'];
-    let savedLang = localStorage.getItem('language') || 'ru'; // Default ru
+    let savedLang = localStorage.getItem('language') || 'en'; // Default en
     if (!supportedLangs.includes(savedLang)) {
         savedLang = 'en'; // Fallback to English if saved lang is weird
         localStorage.setItem('language', savedLang); // Correct localStorage
@@ -371,8 +371,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update the language selector display
         const selectedOption = langOptions?.querySelector(`li[data-lang="${lang}"]`);
         if (selectedOption && selectedLangFlag && selectedLangCode) {
-            selectedLangFlag.textContent = selectedOption.querySelector('span').textContent;
-            selectedLangCode.textContent = lang.toUpperCase();
+			const flagImg = selectedOption.querySelector('img');
+			if (flagImg) {
+				selectedLangFlag.innerHTML = flagImg.outerHTML;  // Копируем <img> флага
+			}
+			selectedLangCode.textContent = lang.toUpperCase();   // Устанавливаем код языка
         } else if (selectedLangFlag && selectedLangCode) {
             // Fallback if options not found (e.g., during initial load)
             const defaultFlags = { ru: '🇷🇺', en: '🇬🇧', de: '🇩🇪', fr: '🇫🇷', es: '🇪🇸', ar: '🇸🇦', zh: '🇨🇳', ja: '🇯🇵' };
