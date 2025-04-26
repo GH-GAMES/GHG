@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuToggle.setAttribute('aria-expanded', !isExpanded);
             navList.classList.toggle('active');
             // Toggle body scroll lock for mobile menu
-            document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : '';
+            // document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : '';
         });
 
         // Close menu when a link is clicked

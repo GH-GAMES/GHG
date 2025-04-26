@@ -289,6 +289,7 @@ main { flex-grow: 1; }
        align-items: center;
        order: 1; /* Nav first inside wrapper */
        flex-grow: 0; /* Don't allow nav itself to grow */
+	   width: 100%;
     }
     .main-nav .nav-list {
         display: none;
@@ -297,6 +298,13 @@ main { flex-grow: 1; }
         flex-direction: column; padding: 1rem;
         border-top: 1px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         backdrop-filter: blur(3px); align-items: stretch; gap: 0; z-index: 109;
+		min-width: 100px;
+		max-width: 90%;
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		border-radius: 8px;
+		
     }
     .main-nav .nav-list.active { display: flex; }
     .main-nav li { width: 100%; text-align: center; }
