@@ -416,7 +416,7 @@ body.rtl { direction: rtl; text-align: right; }
 body.rtl .nav-wrapper { flex-direction: row-reverse; gap: 1.5rem; margin-left: 0; margin-right: auto;} /* Reverse items in wrapper and push left */
 body.rtl .main-nav {}
 /*body.rtl .language-selector {}*/
-/*body.rtl .lang-options { right: auto; left: 0; }*/
+body.rtl .lang-options { right: auto; left: 0; }
 body.rtl .game-card-content { padding-right: 2.5rem; padding-left: calc(2.5rem + 50px + 1rem); }
 body.rtl .game-card-steam { right: auto; left: 0.75%; box-shadow: 1px 0px 5px rgba(0,0,0,0.2); }
 body.rtl .developer-swiper .swiper-button-prev { left: auto; right: -10px; }
@@ -430,7 +430,7 @@ body.rtl .developer-swiper .swiper-button-next { right: auto; left: -10px; }
     body.rtl .logo { order: 1; margin-left: auto; margin-right: 0; }
     body.rtl .nav-wrapper { order: 2; flex-direction: row-reverse; gap: 0; }
     body.rtl .main-nav { order: 1; }
-    body.rtl .language-selector { order: 2; margin-left: 0.5rem; margin-right: 0;}
+    /*body.rtl .language-selector { order: 2; margin-left: 0.5rem; margin-right: 0;}*/
     body.rtl .menu-toggle { order: 3; margin-left: 0.5rem; margin-right: 0;}
     /* Keep toggle static */
     body.rtl .main-nav .menu-toggle { position: static; transform: none; order: -1; /* Place toggle visually first in reversed nav */ margin-left:0; margin-right: 0.5rem;}
