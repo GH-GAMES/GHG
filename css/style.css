@@ -338,7 +338,7 @@ main { flex-grow: 1; }
     .game-card-content p { max-width: none; }
 
     /* Mobile Steam Button */
-    .game-card-steam { position: relative; top: auto; bottom: auto; right: auto; left: auto; margin: 1rem auto; display: inline-flex; flex-direction: row; align-items: center; justify-content: center; gap: 0.5rem; width: auto; height: auto; padding: 0.6rem 1.2rem; writing-mode: horizontal-tb; transform: none; background-color: #0b153a; border-radius: 15px; box-shadow: none; }
+    .game-card-steam { position: relative; margin: 1rem; width: calc(100% - 1.5rem); display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.6rem 1.2rem; background-color: #0b153a; border-radius: 15px; box-shadow: none; writing-mode: horizontal-tb; transform: none; box-sizing: border-box; }
     .game-card:hover .game-card-steam { background-color: #162a72; transform: none; }
     .game-card-steam img { position: static; transform: none; width: 24px; height: 24px; pointer-events: none; z-index: 1; order: -1; }
     .game-card-steam span { font-size: 1.5rem; transform: none; letter-spacing: normal; margin: 0; color: #fff; font-weight: bold; text-transform: uppercase; order: 0; }
