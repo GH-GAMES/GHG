@@ -164,6 +164,13 @@ main { flex-grow: 1; }
 .swiper-pagination-bullet:hover { opacity: 1; transform: scale(1.1); }
 .swiper-pagination-bullet-active { opacity: 1; background: #ff8500; transform: scale(1.1); }
 
+/* === FIX: Prevent Swiper from breaking in RTL === */
+.swiper, 
+.swiper-wrapper, 
+.swiper-slide {
+    direction: ltr !important;
+}
+
 /* Стили для страницы About и Contact (Hero) */
 .page-about .hero, .page-contact .hero { background-image: url('../images/Resources/GRADIENT_BG.jpg'); background-color: rgba(0,0,0,0.5); background-blend-mode: multiply; background-size: cover; background-position: center center; min-height: 40vh; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 4rem 1rem; }
 .page-contact .hero { min-height: 60vh; }
