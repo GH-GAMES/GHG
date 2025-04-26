@@ -415,8 +415,8 @@ body.rtl { direction: rtl; text-align: right; }
 /*body.rtl .logo { margin-right: 0; margin-left: auto; } */ /* Push logo left */
 body.rtl .nav-wrapper { flex-direction: row-reverse; gap: 1.5rem; margin-left: 0; margin-right: auto;} /* Reverse items in wrapper and push left */
 body.rtl .main-nav {}
-body.rtl .language-selector {}
-body.rtl .lang-options { right: auto; left: 0; }
+/*body.rtl .language-selector {}*/
+/*body.rtl .lang-options { right: auto; left: 0; }*/
 body.rtl .game-card-content { padding-right: 2.5rem; padding-left: calc(2.5rem + 50px + 1rem); }
 body.rtl .game-card-steam { right: auto; left: 0.75%; box-shadow: 1px 0px 5px rgba(0,0,0,0.2); }
 body.rtl .developer-swiper .swiper-button-prev { left: auto; right: -10px; }
