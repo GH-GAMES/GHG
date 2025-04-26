@@ -385,9 +385,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add/Remove 'rtl' class for Arabic
         if (lang === 'ar') {
-            document.documentElement.setAttribute('dir', 'rtl');
+            document.body.classList.add('rtl');
         } else {
-            document.documentElement.setAttribute('dir', 'ltr');
+            document.body.classList.remove('rtl');
         }
 
         // Close the dropdown after selection
