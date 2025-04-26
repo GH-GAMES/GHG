@@ -405,7 +405,7 @@ main { flex-grow: 1; }
 #selected-lang-flag { font-size: 1.2em; display: inline-block; vertical-align: middle; }
 #selected-lang-code { font-weight: bold; text-transform: uppercase; }
 .lang-options { display: none; position: absolute; top: 100%; right: 0; background-color: #1a1a1a; border: 1px solid #444; border-radius: 5px; list-style: none; padding: 0.5rem 0; margin: 0; margin-top: 5px; min-width: 130px; z-index: 110; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-.lang-options li { padding: 0.6rem 1rem; cursor: pointer; transition: background-color 0.2s ease; display: flex; align-items: center; gap: 0.6rem; white-space: nowrap; color: #ddd; }
+.lang-options li { padding: 0.6rem 1rem; cursor: pointer; transition: background-color 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 0.6rem; white-space: nowrap; color: #ddd; }
 .lang-options li:hover { background-color: #333; color: #fff; }
 .lang-options li span { font-size: 1.1em; display: inline-block; vertical-align: middle; min-width: 1.5em; text-align: center; }
 
