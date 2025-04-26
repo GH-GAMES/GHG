@@ -396,11 +396,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event Listeners for Language Selector
     if (languageSelector && selectedLangDisplay && langOptions) {
-        selectedLangDisplay.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const currentDisplay = window.getComputedStyle(langOptions).display;
-            langOptions.style.display = currentDisplay === 'block' ? 'none' : 'block';
-        });
+		selectedLangDisplay.addEventListener('click', (e) => {
+			e.stopPropagation();
+			const currentDisplay = window.getComputedStyle(langOptions).display;
+
+			if (currentDisplay !== 'block') {
+				// Если открываем язык — закрываем nav-list
+				if (navList.classList.contains('active')) {
+					navList.classList.remove('active');
+					menuToggle.setAttribute('aria-expanded', 'false');
+					document.body.style.overflow = '';
+				}
+				langOptions.style.display = 'block';
+			} else {
+				langOptions.style.display = 'none';
+			}
+		});
 
         langOptions.addEventListener('click', (e) => {
             const targetLi = e.target.closest('li[data-lang]');
