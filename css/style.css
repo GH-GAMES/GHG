@@ -1912,8 +1912,8 @@ body.rtl .developer-swiper .swiper-button-next {
     .log-box pre {
         margin: 0;
         font-family: "Courier New", monospace;
-        font-size: 0.95rem;
-        line-height: 1.8;
+        font-size: clamp(0.6rem, 0.8vw, 0.85rem);
+        line-height: 1.5;
         color: #ccc;
         white-space: pre-wrap;
         word-break: break-word;
