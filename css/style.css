@@ -1785,6 +1785,7 @@ body.rtl .developer-swiper .swiper-button-next {
         transform: none;
         order: -1;
     }
+}
 
 /* LOG SECTION */
 .log-section {
@@ -1816,13 +1817,13 @@ body.rtl .developer-swiper .swiper-button-next {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
-    border: 1px solid #333;
-    border-radius: 20px;
+
     padding: 1.5rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #333;
+
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .log-box pre {
@@ -1831,13 +1832,15 @@ body.rtl .developer-swiper .swiper-button-next {
     max-width: 100%;
     display: block;
     box-sizing: border-box;
+
     font-family: "Courier New", monospace;
     font-size: 0.78rem;
     line-height: 1.55;
     color: #ccc;
+
     white-space: pre-wrap;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 
 .log-info {
@@ -1925,17 +1928,5 @@ body.rtl .developer-swiper .swiper-button-next {
     }
 }
 .log-text {
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    box-sizing: border-box;
-    font-family: "Courier New", monospace;
-    font-size: 0.78rem;
-    line-height: 1.55;
     color: #ccc;
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-}
 }
